@@ -1,0 +1,189 @@
+{
+    "name": "cosmic-next",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "start": "next start",
+        "start:storybook": "start-storybook -p 6006",
+        "build": "concurrently \"yarn build:app\" \"yarn build:storybook\"",
+        "build:app": "next build",
+        "build:storybook": "build-storybook",
+        "hygen": "./node_modules/.bin/hygen",
+        "postinstall": "husky install",
+        "lint": "concurrently \"yarn lint:js\" \"yarn lint:css\"",
+        "lint:js": "cross-env eslint --config ./.eslintrc ./src/components/**/*.{tsx,ts}",
+        "lint:css": "cross-env stylelint --mw 0 --config ./stylelint.config.js ./src/**/*.css",
+        "test": "jest --env=jsdom"
+    },
+    "resolutions": {
+        "webpack": "^5"
+    },
+    "jest": {
+        "coverageReporters": [
+            "html",
+            "text"
+        ],
+        "testPathIgnorePatterns": [
+            "<rootDir>/pages/"
+        ],
+        "collectCoverageFrom": [
+            "<rootDir>/src/components/**/*.{ts,tsx}",
+            "!<rootDir>/**/*.stories.tsx",
+            "!<rootDir>/**/index.ts",
+            "!<rootDir>/node_modules/",
+            "!<rootDir>/pages/"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "lines": 80,
+                "statements": 80,
+                "functions": 80,
+                "branches": 70
+            },
+            "./src/components/": {
+                "statements": 90
+            }
+        },
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/_mocks/fileMock.js",
+            "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+        }
+    },
+    "babel": {
+        "presets": [
+            "next/babel"
+        ],
+        "plugins": [
+            [
+                "@babel/plugin-proposal-private-property-in-object",
+                {
+                    "loose": true
+                }
+            ],
+            [
+                "@babel/plugin-proposal-class-properties",
+                {
+                    "loose": true
+                }
+            ],
+            [
+                "@babel/plugin-proposal-private-methods",
+                {
+                    "loose": true
+                }
+            ]
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "lint-staged": {
+        "src/components/**/*.{css,scss,sass}": [
+            "yarn lint --fix",
+            "prettier --write"
+        ],
+        "src/components/**/*.{tsx,ts,css,scss,md}": [
+            "prettier --write"
+        ],
+        "src/components/**/*.{tsx,ts}": [
+            "yarn test --findRelatedTests --bail --ci --watchAll=false --silent"
+        ],
+        "src/icons/**/*.{css,scss,sass}": [
+            "yarn lint --fix",
+            "prettier --write"
+        ],
+        "src/icons/**/*.{tsx,ts,css,scss,md}": [
+            "prettier --write"
+        ],
+        "src/icons/**/*.{tsx,ts}": [
+            "yarn test --findRelatedTests --bail --ci --watchAll=false --silent"
+        ],
+        "src/elements/**/*.{css,scss,sass}": [
+            "yarn lint --fix",
+            "prettier --write"
+        ],
+        "src/elements/**/*.{tsx,ts,css,scss,md}": [
+            "prettier --write"
+        ],
+        "src/elements/**/*.{tsx,ts}": [
+            "yarn test --findRelatedTests --bail --ci --watchAll=false --silent"
+        ]
+    },
+    "dependencies": {
+        "@loadable/component": "^5.15.2",
+        "jest": "^27.5.1",
+        "next": "12.1.4",
+        "react": "18.0.0",
+        "react-dom": "18.0.0",
+        "webpack": "^5.72.0"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+        "@pragmatics/stylelint-config-order": "^2.2.3",
+        "@storybook/addon-a11y": "^6.4.19",
+        "@storybook/addon-actions": "^6.4.19",
+        "@storybook/addon-essentials": "^6.4.19",
+        "@storybook/addon-links": "^6.4.19",
+        "@storybook/addon-postcss": "^2.0.0",
+        "@storybook/builder-webpack5": "^6.4.21",
+        "@storybook/manager-webpack5": "^6.4.21",
+        "@storybook/react": "^6.4.19",
+        "@testing-library/react": "^13.0.0",
+        "@types/glob": "^7.2.0",
+        "@types/jest": "^27.4.1",
+        "@types/loadable__component": "^5.13.3",
+        "@types/react": "^17.0.38",
+        "@types/react-dom": "^17.0.11",
+        "@types/react-router": "^5.1.17",
+        "@types/react-test-renderer": "^17.0.1",
+        "@types/yup": "^0.29.11",
+        "@typescript-eslint/eslint-plugin": "^5.8.0",
+        "@typescript-eslint/parser": "^5.8.0",
+        "@whitespace/storybook-addon-html": "^5.0.0",
+        "autoprefixer": "^10.4.4",
+        "concurrently": "^6.5.1",
+        "cross-env": "^7.0.3",
+        "eslint": "8.13.0",
+        "eslint-config-airbnb": "^19.0.2",
+        "eslint-config-next": "12.1.4",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-import-resolver-typescript": "^2.5.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.28.0",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "husky": "^7.0.4",
+        "hygen": "^6.1.0",
+        "identity-obj-proxy": "^3.0.0",
+        "lint-staged": "^12.3.7",
+        "postcss": "^8.4.12",
+        "postcss-custom-media": "^8.0.0",
+        "postcss-preset-env": "^7.1.0",
+        "postcss-pxtorem": "^6.0.0",
+        "postcss-reporter": "^7.0.4",
+        "prettier": "^2.6.2",
+        "storybook-addon-performance": "^0.16.1",
+        "storybook-addon-pseudo-states": "^1.7.0",
+        "storybook-dark-mode": "^1.0.9",
+        "stylelint": "^14.6.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-high-performance-animation": "^1.6.0",
+        "stylelint-no-indistinguishable-colors": "^1.3.0",
+        "stylelint-order": "^5.0.0",
+        "stylelint-prettier": "^2.0.0",
+        "stylelint-suitcss": "^4.0.0",
+        "stylelint-value-no-unknown-custom-properties": "^3.0.0",
+        "tailwindcss": "^3.0.23",
+        "typescript": "^4.5.4"
+    }
+}
