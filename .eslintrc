@@ -32,6 +32,8 @@
       "experimentalObjectRestSpread": true
     }
   },
+  "root": true,
+  "dot-notation": 0,
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "react/display-name": "off",

@@ -16,4 +16,6 @@ export const Test = Template.bind({});
 export default Component;
 
 // https://storybook.js.org/docs/react/essentials/controls
-Test.args = {} as Props; 
+Test.args = {
+  text: 'Test',
+} as Props;
