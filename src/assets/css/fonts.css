@@ -5,8 +5,7 @@
   src: url('../fonts/Stolzl/Stolzl-Light.eot');
   src: local('Stolzl Light'), local('Stolzl-Light'),
     url('../fonts/Stolzl/Stolzl-Light.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Light.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Light.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Light.woff2') format('woff2'), url('../fonts/Stolzl/Stolzl-Light.woff') format('woff'),
     url('../fonts/Stolzl/Stolzl-Light.ttf') format('truetype');
 }
 
@@ -17,8 +16,7 @@
   src: url('../fonts/Stolzl/Stolzl-Thin.eot');
   src: local('Stolzl Thin'), local('Stolzl-Thin'),
     url('../fonts/Stolzl/Stolzl-Thin.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Thin.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Thin.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Thin.woff2') format('woff2'), url('../fonts/Stolzl/Stolzl-Thin.woff') format('woff'),
     url('../fonts/Stolzl/Stolzl-Thin.ttf') format('truetype');
 }
 
@@ -29,8 +27,7 @@
   src: url('..//fonts/Stolzl/Stolzl-Book.eot');
   src: local('Stolzl Book'), local('Stolzl-Book'),
     url('../fonts/Stolzl/Stolzl-Book.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Book.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Book.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Book.woff2') format('woff2'), url('../fonts/Stolzl/Stolzl-Book.woff') format('woff'),
     url('../fonts/Stolzl/Stolzl-Book.ttf') format('truetype');
 }
 
@@ -53,8 +50,7 @@
   src: url('../fonts/Stolzl/Stolzl-Bold.eot');
   src: local('Stolzl Bold'), local('Stolzl-Bold'),
     url('../fonts/Stolzl/Stolzl-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Bold.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Bold.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Bold.woff2') format('woff2'), url('../fonts/Stolzl/Stolzl-Bold.woff') format('woff'),
     url('../fonts/Stolzl/Stolzl-Bold.ttf') format('truetype');
 }
 
@@ -65,7 +61,6 @@
   src: url('../fonts/Stolzl/Stolzl-Medium.eot');
   src: local('Stolzl Medium'), local('Stolzl-Medium'),
     url('../fonts/Stolzl/Stolzl-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Medium.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Medium.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Medium.woff2') format('woff2'), url('../fonts/Stolzl/Stolzl-Medium.woff') format('woff'),
     url('../fonts/Stolzl/Stolzl-Medium.ttf') format('truetype');
 }
