@@ -33,7 +33,6 @@
     }
   },
   "root": true,
-  "dot-notation": 0,
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "react/display-name": "off",
@@ -52,6 +51,7 @@
         "varsIgnorePattern": "^_"
       }
     ],
+    "dot-notation": 0,
     "no-nested-ternary": "off",
     "import/no-cycle": "off",
     "import/no-named-as-default-member": "off",
