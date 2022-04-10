@@ -5,7 +5,9 @@
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/warnings",
-    "prettier"
+    "prettier",
+    "eslint:recommended",
+    "next"
   ],
   "env": {
     "browser": true,

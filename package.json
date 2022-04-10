@@ -129,6 +129,7 @@
     },
     "devDependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+        "@next/eslint-plugin-next": "^12.1.4",
         "@pragmatics/stylelint-config-order": "^2.2.3",
         "@storybook/addon-a11y": "^6.4.19",
         "@storybook/addon-actions": "^6.4.19",
