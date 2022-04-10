@@ -59,3 +59,13 @@ button {
   font-size: inherit;
   cursor: pointer;
 }
+
+@-webkit-keyframes slide {
+  0% { background-position: center bottom, 0 center; }
+  100% { background-position: center bottom, 1440px center; }
+}
+
+@keyframes slide {
+  0% { background-position: center bottom, 0 center;}
+  100%  {background-position: center bottom, 1440px center; }
+}

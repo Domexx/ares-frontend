@@ -50,9 +50,23 @@ module.exports = {
       'node_modules',
     ];
 
+    config.module.rules.find(
+      rule => rule.test.toString() === '/\\.css$/'
+    ).exclude = /\.module\.css$/;
+
     config.module.rules.push({
-      test: /\.scss$/,
-      use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+      test: /\.module\.css$/,
+      include: path.resolve(__dirname, '../src/components'),
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+            modules: true
+          }
+        }
+      ]
     });
 
     return config;
