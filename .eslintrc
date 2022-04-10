@@ -33,7 +33,7 @@
     }
   },
   "root": true,
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "rules": {
     "react/display-name": "off",
     "react/require-default-props": "off",
