@@ -17,5 +17,5 @@ export default Component;
 
 // https://storybook.js.org/docs/react/essentials/controls
 Header.args = {
-  text: 'Hello',
+  text: 'Go to Cosmic',
 } as Props;

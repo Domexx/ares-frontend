@@ -9,7 +9,7 @@ export type Props = {
   height?: number;
 };
 
-const Logo: React.FC<Props> = ({ url = '#', layout = 'fixed', width = 500, height = 220 }) => {
+const Logo: React.FC<Props> = ({ url = '#', layout = 'fixed', width = 122, height = 53 }) => {
   return (
     <div className={s['logo']}>
       <a href={url}>
