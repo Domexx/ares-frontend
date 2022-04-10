@@ -1,25 +1,25 @@
 /* === === === === Header === === === === */
 
 .Header {
-    text-shadow: rgb(0 0 0 / 30%) 0px 1px 0px;
-    text-align: center;
-    position: relative;
-    height: 150px;
-    overflow: hidden;
-    background: url(/static/images/citysky.png) repeat-x, url(/static/images/cloudysky.png) rgb(116, 216, 234);
-    background-repeat: repeat-x;
-    border-bottom: 3px solid rgba(8, 8, 8, 0.18);
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  border-bottom: 3px solid #0808082e;
+  text-align: center;
+  text-shadow: #0000004d 0 1px 0;
+  background: url('/static/images/citysky.png') repeat-x, url('/static/images/cloudysky.png') rgb(116, 216, 234);
+  background-repeat: repeat-x;
 }
 
 .Header::before {
-    background-color: rgba(0, 0, 0, 0.41);
-    content: "";
-    background-position: center bottom;
-    display: block;
-    position: absolute;
-    inset: 0px;
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #00000069;
+  background-position: center bottom;
+  inset: 0;
 }
 
 .Header:global {
-    animation: 60s linear 0s infinite normal none running slide;
+  animation: 60s linear 0s infinite normal none running slide;
 }

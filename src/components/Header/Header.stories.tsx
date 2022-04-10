@@ -17,5 +17,5 @@ export default Component;
 
 // https://storybook.js.org/docs/react/essentials/controls
 Header.args = {
-  text: "Hello"
-} as Props; 
+  text: 'Hello',
+} as Props;

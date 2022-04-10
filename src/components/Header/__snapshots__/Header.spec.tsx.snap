@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should render properly 1`] = `
+<div
+  class="Header"
+>
+  <div
+    class="container h-full items-center"
+  >
+    Test Text
+  </div>
+  <div
+    class="image"
+  />
+</div>
+`;

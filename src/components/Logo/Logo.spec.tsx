@@ -2,11 +2,11 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import Header from './Header';
+import Logo from './Logo';
 
-describe('Header Component', () => {
+describe('Logo Component', () => {
   it('should render properly', () => {
-    const { container } = render(<Header text="Test Text" />);
+    const { container } = render(<Logo />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
