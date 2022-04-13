@@ -13,7 +13,7 @@
         "postinstall": "husky install",
         "lint": "concurrently \"yarn lint:js\" \"yarn lint:css\"",
         "lint:js": "cross-env eslint --config ./.eslintrc ./src/components/**/*.{tsx,ts}",
-        "lint:css": "cross-env stylelint --resolve-plugins-relative-to . --mw 0 --config ./stylelint.config.js ./src/**/*.css",
+        "lint:css": "cross-env stylelint --mw 0 --config ./stylelint.config.js ./src/**/*.css",
         "test": "jest --env=jsdom"
     },
     "resolutions": {

@@ -35,7 +35,7 @@
     }
   },
   "root": true,
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "react/display-name": "off",
     "react/require-default-props": "off",
