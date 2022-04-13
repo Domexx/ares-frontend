@@ -8,7 +8,7 @@ exports[`Logo Component should render properly 1`] = `
     href="#"
   >
     <span
-      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 500px; height: 220px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 122px; height: 53px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
     >
       <img
         alt="Cosmic_Logo"
