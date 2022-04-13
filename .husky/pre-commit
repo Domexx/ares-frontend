@@ -1,5 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# @FIXME look for permission problems
-# yarn lint-staged
+yarn lint-staged
