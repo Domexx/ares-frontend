@@ -35,12 +35,6 @@
       "experimentalObjectRestSpread": true
     }
   },
-  "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-  ],
   "root": true,
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
