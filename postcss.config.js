@@ -23,4 +23,7 @@ module.exports = {
     }),
     postcssReporter({ clearReportedMessages: true }),
   ],
+  plugins: {
+    autoprefixer: {},
+  }
 };
