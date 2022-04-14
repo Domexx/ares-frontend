@@ -23,8 +23,4 @@ module.exports = {
     }),
     postcssReporter({ clearReportedMessages: true }),
   ],
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  }
 };

@@ -3,8 +3,6 @@ import { addDecorator } from '@storybook/react';
 import { MemoryRouter } from 'react-router';
 import { withPerformance } from 'storybook-addon-performance';
 
-import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
-import 'tailwindcss/tailwind.css';
 import '../src/assets/css/main.css';
 
 import * as NextImage from 'next/image';
