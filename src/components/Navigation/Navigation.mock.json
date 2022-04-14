@@ -1,0 +1,25 @@
+{
+    "main": [
+        {
+            "id": "cosmic_news",
+            "name": "News",
+            "url": "news",
+            "icon": "News",
+            "children": []
+        },
+        {
+            "id": "cosmic_statistics",
+            "name": "Statistics",
+            "url": "statistics",
+            "icon": "Statistics",
+            "children": []
+        },
+        {
+            "id": "cosmic_users",
+            "name": "Users",
+            "url": "users",
+            "icon": "Users",
+            "children": []
+        }
+    ]
+}

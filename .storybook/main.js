@@ -74,6 +74,21 @@ module.exports = {
       ]
     });
 
+    config.module.rules.push({
+      test: /\.module\.css$/,
+      include: path.resolve(__dirname, '../src/elements'),
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+            modules: true
+          }
+        }
+      ]
+    });
+
     return config;
   },
 };
