@@ -1,3 +1,5 @@
+import Logo from "@Cosmic/components/Logo";
+
 export default function Index() {
-  return <h1>Works</h1>;
+  return <Logo />;
 }

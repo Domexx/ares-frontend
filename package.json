@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "start": "next start",
-        "start:storybook": "start-storybook -p 6006 -s public",
+        "start:storybook": "start-storybook -p 6006 -s assets",
         "build": "concurrently \"yarn build:app\" \"yarn build:storybook\"",
         "build:app": "next build",
         "build:storybook": "build-storybook",
@@ -46,8 +46,9 @@
             }
         },
         "moduleNameMapper": {
-            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/_mocks/fileMock.js",
-            "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/_mocks/fileMock.js",
+            "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+            "\\.svg": "<rootDir>/_mocks/svgMock.tsx"
         }
     },
     "babel": {
@@ -71,6 +72,14 @@
                 "@babel/plugin-proposal-private-methods",
                 {
                     "loose": true
+                }
+            ],
+            [
+                "module-resolver",
+                {
+                    "alias": {
+                        "@Cosmic/*": "/src/*"
+                    }
                 }
             ]
         ]
@@ -129,6 +138,7 @@
     },
     "devDependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+        "@dword-design/eslint-plugin-import-alias": "^2.0.7",
         "@next/eslint-plugin-next": "^12.1.4",
         "@pragmatics/stylelint-config-order": "^2.2.3",
         "@storybook/addon-a11y": "^6.4.19",
@@ -139,6 +149,7 @@
         "@storybook/builder-webpack5": "^6.4.21",
         "@storybook/manager-webpack5": "^6.4.21",
         "@storybook/react": "^6.4.19",
+        "@svgr/webpack": "^6.2.1",
         "@testing-library/react": "^13.0.0",
         "@types/glob": "^7.2.0",
         "@types/jest": "^27.4.1",
@@ -148,18 +159,19 @@
         "@types/react-router": "^5.1.17",
         "@types/react-test-renderer": "^17.0.1",
         "@types/yup": "^0.29.11",
-        "@typescript-eslint/eslint-plugin": "^5.8.0",
-        "@typescript-eslint/parser": "^5.8.0",
+        "@typescript-eslint/eslint-plugin": "^5.19.0",
+        "@typescript-eslint/parser": "^5.19.0",
         "@whitespace/storybook-addon-html": "^5.0.0",
         "autoprefixer": "^10.4.4",
+        "babel-jest": "^27.5.1",
         "concurrently": "^6.5.1",
         "cross-env": "^7.0.3",
         "eslint": "8.13.0",
         "eslint-config-airbnb": "^19.0.2",
         "eslint-config-next": "12.1.4",
         "eslint-config-prettier": "^8.3.0",
-        "eslint-import-resolver-typescript": "^2.5.0",
-        "eslint-plugin-import": "^2.25.3",
+        "eslint-import-resolver-typescript": "^2.7.1",
+        "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-jsx-a11y": "^6.5.1",
         "eslint-plugin-react": "^7.28.0",
         "eslint-plugin-react-hooks": "^4.3.0",
@@ -174,6 +186,7 @@
         "postcss-pxtorem": "^6.0.0",
         "postcss-reporter": "^7.0.4",
         "prettier": "^2.6.2",
+        "react-native-svg": "^12.3.0",
         "storybook-addon-performance": "^0.16.1",
         "storybook-addon-pseudo-states": "^1.7.0",
         "storybook-dark-mode": "^1.0.9",
