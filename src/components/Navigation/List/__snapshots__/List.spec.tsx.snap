@@ -2,6 +2,6 @@
 
 exports[`List Component should render properly 1`] = `
 <ul
-  class="list"
+  class="List"
 />
 `;

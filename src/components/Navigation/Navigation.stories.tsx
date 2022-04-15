@@ -21,4 +21,8 @@ const { main } = MenuMock;
 // https://storybook.js.org/docs/react/essentials/controls
 Navigation.args = {
   main,
+  avatar: {
+    name: 'Dome',
+    image: 'static/images/Navigation/avatar.png',
+  },
 } as Props;

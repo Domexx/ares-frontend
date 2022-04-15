@@ -2,7 +2,7 @@
 
 exports[`List Item Component should render properly 1`] = `
 <li
-  class="list-item"
+  class="ListItem"
   data-current="Test"
 />
 `;

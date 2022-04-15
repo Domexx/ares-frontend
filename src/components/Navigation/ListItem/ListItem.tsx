@@ -26,7 +26,7 @@ const ListItem: React.FC<Props> = ({ name, url, icon }) => {
   const selectedIcon = icons[icon];
 
   return (
-    <li data-current={name} className={s['list-item']}>
+    <li data-current={name} className={s['ListItem']}>
       {selectedIcon}
       <AutoExternalLink url={url} text={name} />
     </li>

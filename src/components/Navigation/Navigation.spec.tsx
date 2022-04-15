@@ -16,7 +16,15 @@ describe('Navigation Component', () => {
   });
 
   it('should render properly', () => {
-    const { container } = render(<Navigation main={mainMock} />);
+    const { container } = render(
+      <Navigation
+        main={mainMock}
+        avatar={{
+          image: '/test.png',
+          name: 'Dome',
+        }}
+      />,
+    );
 
     expect(container.firstChild).toMatchSnapshot();
   });
