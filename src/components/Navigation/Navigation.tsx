@@ -1,11 +1,19 @@
 import React from 'react';
 import s from './Navigation.module.css';
 
-// eslint-disable-next-line @typescript-eslint/ban-types
-export type Props = {};
+import { MenuItem } from '../../shared/interfaces/MenuItem';
+import List from './List';
 
-const Navigation: React.FC<Props> = () => {
-  return <div className={s['navigation']}>Navigation Works!</div>;
+export type Props = {
+  main: MenuItem[];
+};
+
+const Navigation: React.FC<Props> = ({ main }) => {
+  return (
+    <nav className={s['navigation']}>
+      <List items={main} />
+    </nav>
+  );
 };
 
 export default Navigation;
