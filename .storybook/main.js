@@ -15,6 +15,7 @@ module.exports = {
     'storybook-dark-mode',
     'storybook-addon-pseudo-states',
     '@whitespace/storybook-addon-html',
+    'storybook-addon-next',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -54,40 +55,6 @@ module.exports = {
       path.resolve(__dirname, '../assets'),
       'node_modules',
     ];
-
-    config.module.rules.find(
-      rule => rule.test.toString() === '/\\.css$/'
-    ).exclude = /\.module\.css$/;
-
-    config.module.rules.push({
-      test: /\.module\.css$/,
-      include: path.resolve(__dirname, '../src/components'),
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1,
-            modules: true
-          }
-        }
-      ]
-    });
-
-    config.module.rules.push({
-      test: /\.module\.css$/,
-      include: path.resolve(__dirname, '../src/elements'),
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1,
-            modules: true
-          }
-        }
-      ]
-    });
 
     return config;
   },

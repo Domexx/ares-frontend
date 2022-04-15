@@ -1,13 +1,10 @@
-const postcssCustomMedia = require('postcss-custom-media');
-const postcssPresetEnv = require('postcss-preset-env');
-const postcssReporter = require('postcss-reporter');
-const postcssPxToRem = require('postcss-pxtorem');
-const stylelint = require('stylelint');
-
 module.exports = {
-  plugins: [
-    stylelint(),
-    postcssPresetEnv({
+  plugins: {
+    'stylelint': {},
+    'postcss-custom-media': {
+      importFrom: `${__dirname}/src/assets/css/mediaqueries.css`,
+    },
+    'postcss-preset-env': {
       stage: 2,
       features: {
         'custom-properties': {
@@ -16,14 +13,9 @@ module.exports = {
         },
         'nesting-rules': true,
       },
-    }),
-    postcssPxToRem(),
-    postcssCustomMedia({
-      importFrom: `${__dirname}/src/assets/css/mediaqueries.css`,
-    }),
-    postcssReporter({ clearReportedMessages: true }),
-  ],
-  plugins: {
+    },
+    'postcss-pxtorem': {},
+    'postcss-reporter': { clearReportedMessages: true },
     autoprefixer: {},
   }
 };
