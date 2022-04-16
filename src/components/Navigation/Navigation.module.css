@@ -23,39 +23,23 @@
 }
 
 .Navigation:not(.is-Active) > ul > li > a {
-  position: absolute;
-  left: 75px;
-  padding: 6px 20px;
-  border-radius: 8px;
-  background: var(--clr-dark-500);
-  color: var(--clr-text-secondary);
-  opacity: 0;
-  transition: opacity 250ms ease-in-out;
-}
-
-.Navigation:not(.is-Active) > ul > li:hover > a {
-  opacity: 1;
-}
-
-.Navigation:not(.is-Active) > ul > li:hover > a::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-width: 5px 7px 5px 0;
-  border-style: solid;
-  border-color: transparent var(--clr-dark-500) transparent transparent;
-  transform: translate(-100%, -50%);
+  margin-left: 0;
 }
 
 .ListItem:not(.is-Active) {
+  flex-direction: column;
   justify-content: center;
+  transition: all 250ms ease-in-out;
 }
 
-.Avatar:not(.is-Active) > span {
+.ListItem:not(.is-Active) + .ListItem:not(.is-Active) {
+  margin-top: 20px;
+}
+
+.Avatar:not(.is-Active) > span,
+.Avatar:not(.is-Active) img {
   min-width: 90px;
+  transition: all 250ms ease-in-out;
 }
 
 @media (--laptop) {

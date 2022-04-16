@@ -3,3 +3,8 @@
 .Logo {
   margin-top: 0;
 }
+
+.Logo a {
+  text-decoration: none;
+  outline: none;
+}

@@ -9,7 +9,7 @@ export type Props = {
 
 const Logo: React.FC<Props> = ({ url = '#' }) => {
   return (
-    <div className={s['logo']}>
+    <div className={s['Logo']}>
       <a href={url}>
         <HabboLogo />
       </a>
