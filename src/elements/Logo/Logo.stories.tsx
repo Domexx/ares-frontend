@@ -3,7 +3,7 @@ import React, { ComponentProps } from 'react';
 import LogoComponent, { Props } from './Logo';
 
 const Component = {
-  title: 'Components/Logo',
+  title: 'Elements/Logo',
   component: LogoComponent,
   argTypes: {},
 };

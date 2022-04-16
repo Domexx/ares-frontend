@@ -1,16 +1,26 @@
 :root {
-  --clr-primary: rgb(218, 144, 69);
-  --clr-white: #ffffff;
+  --fnt-main: 'Stolzl', sans-serif;
 
-  --clr-clickable: var(--clr-primary);
+  --clr-primary: #21cb61;
+
+  /* stylelint-disable plugin/stylelint-no-indistinguishable-colors */
+  --clr-background: #313438;
+  --clr-clickable: #21cb61;
   --clr-error: #ff4a55;
 
-  --clr-background: #1f1f1f;
-  --clr-background-secondary: #292929;
-
-  --clr-text-primary: var(--clr-white);
-  --clr-text-secondary: rgba(255, 255, 255, 0.6);
+  --clr-text-primary: #ffffff;
+  --clr-text-secondary: rgba(255, 255, 255, 0.65);
   --clr-text-tertiary: #b5b6b8;
 
-  --fnt-primary: 'Poppins', sans-serif;
+  --clr-dark-300: #313438;
+  --clr-dark-400: #2c2f33;
+
+  /* stylelint-enable plugin/stylelint-no-indistinguishable-colors */
+  --clr-dark-500: #0e1317;
+  --clr-dark-600: #1d2025;
+
+  --clr-news: #ff4a55;
+  --clr-update: #5ecfff;
+  --clr-poll: #e328af;
+  --clr-more: #21cb61;
 }

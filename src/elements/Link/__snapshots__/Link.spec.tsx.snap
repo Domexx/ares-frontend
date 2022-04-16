@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Component should render properly as a relative link 1`] = `
+<a
+  class="text"
+  href="https://url.com"
+>
+  Virgil
+</a>
+`;
+
+exports[`Link Component should render properly as an external link 1`] = `
+<a
+  class="text"
+  href="https://url.com"
+  rel="noreferrer noopener"
+  target="_blank"
+>
+  Virgil
+</a>
+`;
