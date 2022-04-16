@@ -2,7 +2,7 @@
 
 exports[`Logo Component should render properly 1`] = `
 <div
-  class="logo"
+  class="Logo"
 >
   <a
     href="#"

@@ -5,7 +5,7 @@ interface IMenuContext {
   setMenuOpen: React.Dispatch<boolean>;
 }
 
-const LoggedInContext = createContext<IMenuContext>({
+const MenuContext = createContext<IMenuContext>({
   menuOpen: true,
   setMenuOpen: () => {
     return null;
@@ -13,8 +13,8 @@ const LoggedInContext = createContext<IMenuContext>({
 });
 
 const useMenuContext = (): IMenuContext => {
-  return useContext(LoggedInContext);
+  return useContext(MenuContext);
 };
 
 export { useMenuContext };
-export default LoggedInContext;
+export default MenuContext;
