@@ -1,0 +1,11 @@
+.u-grid {
+  display: grid;
+  grid-template-columns: 70px repeat(12, 1fr) 70px;
+}
+
+@media (--phone) {
+  .u-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(12, 1fr) 100px;
+  }
+}

@@ -1,0 +1,19 @@
+/* === === === === Footer === === === === */
+
+.Footer {
+  position: relative;
+  flex: none;
+  width: 100%;
+  max-height: 435px;
+}
+
+.FooterTop {
+  grid-column: 1 / -1;
+
+  padding: 40px 0;
+  background: var(--clr-dark-400);
+}
+
+.FooterTop-logo {
+  grid-column: 2 / span 3;
+}

@@ -69,3 +69,34 @@ button {
     background-position: center bottom, 1440px center;
   }
 }
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Page-body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Page-bodyWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.Page-inner {
+  flex: 1;
+  padding-top: 30px;
+  transition: all 250ms ease-in-out;
+}
+
+@media (--laptop) {
+  .Page-content {
+    height: auto;
+  }
+}
