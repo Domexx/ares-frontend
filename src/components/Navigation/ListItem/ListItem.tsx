@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import s from './ListItem.module.css';
 
 import AutoExternalLink from '../../../elements/AutoExternalLink';
@@ -12,9 +13,10 @@ export type Props = {
   name: string;
   url: string;
   icon: string;
+  className?: string;
 };
 
-const ListItem: React.FC<Props> = ({ name, url, icon }) => {
+const ListItem: React.FC<Props> = ({ name, url, icon, className }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const icons: any = {
     news: <News />,
@@ -23,10 +25,12 @@ const ListItem: React.FC<Props> = ({ name, url, icon }) => {
     statistics: <Statistics />,
   };
 
+  const classes = clsx(s['ListItem'], className);
+
   const selectedIcon = icons[icon];
 
   return (
-    <li data-current={name} className={s['ListItem']}>
+    <li data-current={name} className={classes}>
       {selectedIcon}
       <AutoExternalLink url={url} text={name} />
     </li>

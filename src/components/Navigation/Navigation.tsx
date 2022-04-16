@@ -15,13 +15,16 @@ export type Props = {
 
 const Navigation: React.FC<Props> = ({ avatar, main }) => {
   const { menuOpen } = useMenuContext();
+  const activeClass = s['is-Active'];
 
-  const navClasses = clsx(s['Navigation'], menuOpen ? s['is-Active'] : '');
+  const navClasses = clsx(s['Navigation'], menuOpen ? activeClass : '');
+  const itemClasses = clsx(s['ListItem'], menuOpen ? activeClass : '');
+  const avatarClasses = clsx(s['Avatar'], menuOpen ? activeClass : '');
 
   return (
     <nav className={navClasses}>
-      <Avatar {...avatar} />
-      <List items={main} />
+      <Avatar className={avatarClasses} {...avatar} />
+      <List className={itemClasses} items={main} />
     </nav>
   );
 };

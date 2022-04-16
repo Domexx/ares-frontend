@@ -50,6 +50,14 @@
   transform: translate(-100%, -50%);
 }
 
+.ListItem:not(.is-Active) {
+  justify-content: center;
+}
+
+.Avatar:not(.is-Active) > span {
+  min-width: 90px;
+}
+
 @media (--laptop) {
   .Navigation.is-Active {
     min-width: 280px;
