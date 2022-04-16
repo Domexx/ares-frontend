@@ -14,7 +14,7 @@ export const PageLayout: React.FC<PropsWithChildren<Props>> = ({ navigation, chi
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <MenuContext.Provider value={{ menuOpen, setMenuOpen }}>
-      <body className="Page">
+      <div className="Page">
         <PageHeader />
         <div className="Page-body">
           <Navigation {...navigation} />
@@ -25,7 +25,7 @@ export const PageLayout: React.FC<PropsWithChildren<Props>> = ({ navigation, chi
             <Footer />
           </div>
         </div>
-      </body>
+      </div>
     </MenuContext.Provider>
   );
 };
