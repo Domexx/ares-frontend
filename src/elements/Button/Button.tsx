@@ -22,7 +22,7 @@ export type Props = {
 const Button: React.FC<PropsWithChildren<Props>> = ({
   onClick,
   disabled,
-  loading,
+  loading = true,
   type = 'default',
   align = 'left',
   big,
@@ -50,14 +50,7 @@ const Button: React.FC<PropsWithChildren<Props>> = ({
   // Render functional Button (default)
   return (
     <button type="button" className={classNames} onClick={handleClick} {...rest}>
-      {loading && (
-        <div className="Button-loader">
-          <div />
-          <div />
-          <div />
-        </div>
-      )}
-      <div className="Button-content">{children}</div>
+      {children}
     </button>
   );
 };

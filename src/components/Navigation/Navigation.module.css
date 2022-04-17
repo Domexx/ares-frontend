@@ -1,7 +1,7 @@
 /* === === === === Navigation === === === === */
 
 .Navigation {
-  position: sticky;
+  position: relative;
   flex: 0 0 10%;
   order: -1;
   width: 100%;

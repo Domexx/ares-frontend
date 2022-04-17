@@ -4,9 +4,5 @@ exports[`Button Component should render properly 1`] = `
 <button
   class="Button Button--default Button--left"
   type="button"
->
-  <div
-    class="Button-content"
-  />
-</button>
+/>
 `;
