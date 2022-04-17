@@ -9,7 +9,64 @@ exports[`Footer Component should render properly 1`] = `
   >
     <div
       class="FooterTop-logo"
-    />
+    >
+      <p
+        class="FooterTop-logoDescription"
+      >
+        Test Description
+      </p>
+    </div>
+    <div
+      class="FooterTop-misc"
+    >
+      <div
+        class="FooterTop-miscLanguage"
+      >
+        <span
+          class="FooterTop-miscLanguageTitle"
+        >
+          Sprachauswahl
+        </span>
+      </div>
+      <div
+        class="FooterTop-miscApp"
+      >
+        <span
+          class="FooterTop-miscAppTitle"
+        >
+          Desktop App
+        </span>
+        <p
+          class="FooterTop-miscAppDescription"
+        >
+          Downloade dir die Desktop App, um einfacher ins Hotel zukommen.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="FooterBottom u-grid"
+  >
+    <div
+      class="FooterBottom-copyright"
+    >
+      <div
+        class="FooterBottom-copyrightTitle"
+      >
+        Copyright Title
+      </div>
+      <div
+        class="FooterBottom-copyrightDescription"
+      >
+        Copyright Description
+      </div>
+    </div>
+    <a
+      class="FooterBottom-discord"
+      href="https://discordapp.com"
+    >
+      <svg />
+    </a>
   </div>
 </footer>
 `;

@@ -22,7 +22,58 @@ export const PageLayout: React.FC<PropsWithChildren<Props>> = ({ navigation, chi
             <main className={`Page-inner ${menuOpen ? 'menu-Open' : ''}`} id="main">
               {children}
             </main>
-            <Footer />
+            <Footer
+              items={[
+                {
+                  headline: 'Support',
+                  children: [
+                    {
+                      name: 'Passwort vergessen?',
+                      link: 'https://nowhere.de',
+                    },
+                    {
+                      name: 'Hilfe Center',
+                      link: 'https://nowhere.de',
+                    },
+                    {
+                      name: 'Entwickler-Dokumentation',
+                      link: 'https://nowhere.de',
+                    },
+                    {
+                      name: 'Kontaktformular',
+                      link: 'https://nowhere.de',
+                    },
+                  ],
+                },
+                {
+                  headline: 'Informationen',
+                  children: [
+                    {
+                      name: 'Was ist Habbo?',
+                      link: 'https://nowhere.de',
+                    },
+                    {
+                      name: 'Wie wird gespielt?',
+                      link: 'https://nowhere.de',
+                    },
+                    {
+                      name: 'Habbo Benimmregeln',
+                      link: 'https://nowhere.de',
+                    },
+                    {
+                      name: 'Sicherheit',
+                      link: 'https://nowhere.de',
+                    },
+                  ],
+                },
+              ]}
+              description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam "
+              discord="https://discord.gg/uAmqc64S"
+              copyright={{
+                title: '© 2022 HabboSO is powered by soCMS',
+                description: 'Das soCMS wurde speziell für HabboSO entwickelt.',
+              }}
+            />
           </div>
         </div>
       </div>
