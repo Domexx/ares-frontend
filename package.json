@@ -25,14 +25,15 @@
             "text"
         ],
         "testPathIgnorePatterns": [
-            "<rootDir>/pages/"
+            "<rootDir>/src/pages/"
         ],
         "collectCoverageFrom": [
             "<rootDir>/src/components/**/*.{ts,tsx}",
             "!<rootDir>/**/*.stories.tsx",
             "!<rootDir>/**/index.ts",
             "!<rootDir>/node_modules/",
-            "!<rootDir>/pages/"
+            "!<rootDir>/src/pages/",
+            "!src/components/LanguageSwitcher/LanguageSwitcher.tsx"
         ],
         "coverageThreshold": {
             "global": {
@@ -190,6 +191,8 @@
         "postcss-pxtorem": "^6.0.0",
         "postcss-reporter": "^7.0.4",
         "prettier": "^2.6.2",
+        "react-loadable": "^5.5.0",
+        "react-merge-refs": "^1.1.0",
         "react-native-svg": "^12.3.0",
         "storybook-addon-next": "^1.6.2",
         "storybook-addon-performance": "^0.16.1",
