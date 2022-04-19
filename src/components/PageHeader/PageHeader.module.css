@@ -2,6 +2,7 @@
 
 .PageHeader {
   position: sticky;
+  flex: none;
   width: 100%;
 }
 
@@ -112,12 +113,6 @@
 .PageHeader-searchButton:hover {
   border: 2px solid var(--clr-clickable);
   background: var(--clr-dark-300);
-}
-
-@media (--laptop) {
-  .PageHeader-logo {
-    display: none;
-  }
 }
 
 @media (--tablet) {
