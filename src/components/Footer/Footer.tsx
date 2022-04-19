@@ -9,6 +9,7 @@ import { FooterListItem } from '../../shared/interfaces/FooterItem';
 
 import List from './List';
 import Button from '../../elements/Button';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 export type Copyright = {
   title: string;
@@ -34,6 +35,7 @@ const Footer: React.FC<Props> = ({ items, description, discord, copyright }) => 
         <div className={`${s['FooterTop-misc']} u-grid`}>
           <div className={s['FooterTop-miscLanguage']}>
             <span className={s['FooterTop-miscLanguageTitle']}>Sprachauswahl</span>
+            <LanguageSwitcher />
           </div>
           <div className={s['FooterTop-miscApp']}>
             <span className={s['FooterTop-miscAppTitle']}>Desktop App</span>

@@ -190,6 +190,7 @@
         "postcss-pxtorem": "^6.0.0",
         "postcss-reporter": "^7.0.4",
         "prettier": "^2.6.2",
+        "react-merge-refs": "^1.1.0",
         "react-native-svg": "^12.3.0",
         "storybook-addon-next": "^1.6.2",
         "storybook-addon-performance": "^0.16.1",

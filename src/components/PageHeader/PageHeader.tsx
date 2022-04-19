@@ -43,7 +43,7 @@ const PageHeader: React.FC = () => {
               className={s['PageHeader-searchField']}
               type="text"
               name="search"
-              placeholder="Placeholder"
+              placeholder="Suche hier nach Usern oder Gruppen..."
             />
             <button className={s['PageHeader-searchButton']} aria-label="Label" type="submit">
               <SearchIcon />
