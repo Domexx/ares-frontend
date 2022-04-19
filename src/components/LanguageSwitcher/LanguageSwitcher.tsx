@@ -52,7 +52,7 @@ const LOCALES_MAP: Record<string, LOCALE_DATA> = {
 
 const LanguageSwitcher: FC = () => {
   const [display, setDisplay] = useState(false);
-  const { locale, locales, defaultLocale = 'en-US', asPath: currentPath } = useRouter();
+  const { locale = null, locales, defaultLocale = 'en-US', asPath: currentPath } = useRouter();
 
   const options = locales?.filter((val) => {
     return val !== locale;
