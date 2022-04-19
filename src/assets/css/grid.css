@@ -1,0 +1,22 @@
+.u-grid {
+  display: grid;
+  grid-template-columns: 70px repeat(12, 1fr) 70px;
+}
+
+@media (--laptop) {
+  .u-grid {
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+  }
+}
+
+@media (--tablet-landscape) {
+  .u-grid {
+    grid-template-columns: 40px repeat(14, 1fr) 40px;
+  }
+}
+
+@media (--phone) {
+  .u-grid {
+    grid-template-columns: 40px repeat(14, 1fr) 40px;
+  }
+}

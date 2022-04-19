@@ -1,0 +1,31 @@
+/* === === === === Button === === === === */
+
+.Button {
+  padding: 28px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-decoration: none;
+  outline: none;
+  transition: filter 250ms ease-in-out;
+}
+
+.Button--default {
+  background: var(--clr-clickable);
+  color: #000000;
+}
+
+.Button--default:hover {
+  filter: brightness(85%);
+}
+
+.Button--secondary {
+  background: var(--clr-dark-600);
+  color: #ffffff;
+  transition: background 250ms ease-in-out;
+}
+
+.Button--secondary:hover {
+  background: var(--clr-dark-500);
+}
