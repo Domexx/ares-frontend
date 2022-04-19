@@ -15,6 +15,7 @@ module.exports = {
     'storybook-dark-mode',
     'storybook-addon-pseudo-states',
     '@whitespace/storybook-addon-html',
+    'storybook-addon-next',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -31,7 +32,12 @@ module.exports = {
   core: {
     builder: 'webpack5',
   },
+  babel: async (options) => {
+        options.plugins.push('babel-plugin-inline-react-svg');
+        return options;
+  },
   webpackFinal: (config) => {
+  
     /**
      * Add support for alias-imports
      * @see https://github.com/storybookjs/storybook/issues/11989#issuecomment-715524391
@@ -46,28 +52,9 @@ module.exports = {
      * @see https://github.com/storybookjs/storybook/issues/12844#issuecomment-867544160
      */
     config.resolve.roots = [
-      path.resolve(__dirname, '../public'),
+      path.resolve(__dirname, '../assets'),
       'node_modules',
     ];
-
-    config.module.rules.find(
-      rule => rule.test.toString() === '/\\.css$/'
-    ).exclude = /\.module\.css$/;
-
-    config.module.rules.push({
-      test: /\.module\.css$/,
-      include: path.resolve(__dirname, '../src/components'),
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1,
-            modules: true
-          }
-        }
-      ]
-    });
 
     return config;
   },

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Header Component should render properly 1`] = `
+<header
+  class="PageHeader"
+>
+  <div
+    class="PageHeader-top"
+  >
+    <div
+      class="PageHeader-topLeft"
+    >
+      <button
+        class="PageHeader-topLeft-button is-Active"
+        type="button"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+      <div
+        class="PageHeader-logo"
+      />
+      <form
+        class="PageHeader-search"
+      >
+        <input
+          class="PageHeader-searchField"
+          name="search"
+          placeholder="Placeholder"
+          type="text"
+          value=""
+        />
+        <button
+          aria-label="Label"
+          class="PageHeader-searchButton"
+          type="submit"
+        >
+          <svg />
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+`;

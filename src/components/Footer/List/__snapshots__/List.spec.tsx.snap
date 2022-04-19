@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component should render properly 1`] = `
+<ul
+  class="List"
+>
+  <div
+    class="List-headline"
+  >
+    Support
+  </div>
+</ul>
+`;

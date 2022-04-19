@@ -1,0 +1,73 @@
+/* === === === === Navigation === === === === */
+
+.Navigation {
+  position: relative;
+  flex: 0 0 10%;
+  order: -1;
+  width: 100%;
+  min-width: 120px;
+  max-width: 120px;
+  min-height: 100%;
+  margin: 0;
+  padding: 40px 16px;
+  background: var(--clr-dark-400);
+  transition: all 250ms ease-in-out;
+}
+
+.Navigation > ul > li > a {
+  margin-left: 30px;
+  white-space: nowrap;
+}
+
+.Navigation.is-Active {
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.Navigation:not(.is-Active) > ul > li > a {
+  margin-left: 0;
+}
+
+.ListItem:not(.is-Active) {
+  flex-direction: column;
+  justify-content: center;
+  transition: all 250ms ease-in-out;
+}
+
+.ListItem:not(.is-Active) + .ListItem:not(.is-Active) {
+  margin-top: 20px;
+}
+
+.Avatar:not(.is-Active) > span,
+.Avatar:not(.is-Active) img {
+  min-width: 90px;
+  transition: all 250ms ease-in-out;
+}
+
+@media (--laptop) {
+  .Navigation.is-Active {
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .Navigation {
+    height: auto;
+  }
+}
+
+@media (--phone) {
+  .Navigation {
+    position: fixed;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  .Navigation.is-Active {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,49 @@
+/* === === === === Navigation/ListItem === === === === */
+
+.ListItem {
+  display: flex;
+  align-items: center;
+}
+
+.ListItem {
+  overflow: hidden;
+  height: 57px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--clr-text-tertiary);
+  transition: background 250ms ease-in-out;
+}
+
+.ListItem:hover {
+  background: var(--clr-dark-300);
+}
+
+.ListItem.is-Active {
+  background: var(--clr-clickable);
+  color: var(--clr-dark-500);
+}
+
+.ListItem + .ListItem {
+  margin-top: 10px;
+}
+
+.ListItem svg {
+  min-width: 20px;
+  min-height: 24px;
+}
+
+.ListItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ListItem svg path {
+  fill: var(--clr-text-tertiary);
+}
+
+.ListItem.is-Active svg path {
+  fill: var(--clr-dark-500);
+}

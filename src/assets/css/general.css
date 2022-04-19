@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: var(--fnt-primary);
+  font-family: var(--fnt-main);
   font-variant: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,7 +26,7 @@ body,
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--fnt-primary);
+  font-family: var(--fnt-main);
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
@@ -67,5 +67,36 @@ button {
 
   100% {
     background-position: center bottom, 1440px center;
+  }
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Page-body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Page-bodyWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.Page-inner {
+  flex: 1;
+  padding-top: 30px;
+  transition: all 250ms ease-in-out;
+}
+
+@media (--laptop) {
+  .Page-content {
+    height: auto;
   }
 }

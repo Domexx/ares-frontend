@@ -1,0 +1,44 @@
+[
+  {
+    "headline": "Support",
+    "children": [
+      {
+        "name": "Passwort vergessen?",
+        "link": "https://nowhere.de"
+      },
+      {
+        "name": "Hilfe Center",
+        "link": "https://nowhere.de"
+      },
+      {
+        "name": "Entwickler-Dokumentation",
+        "link": "https://nowhere.de"
+      },
+      {
+        "name": "Kontaktformular",
+        "link": "https://nowhere.de"
+      }
+    ]
+  },
+  {
+    "headline": "Informationen",
+    "children": [
+      {
+        "name": "Was ist Habbo?",
+        "link": "https://nowhere.de"
+      },
+      {
+        "name": "Wie wird gespielt?",
+        "link": "https://nowhere.de"
+      },
+      {
+        "name": "Habbo Benimmregeln",
+        "link": "https://nowhere.de"
+      },
+      {
+        "name": "Sicherheit",
+        "link": "https://nowhere.de"
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+/* === === === === Footer/ListItem === === === === */
+
+.ListItem {
+  margin-top: 24px;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--clr-text-tertiary);
+  transition: opacity 0.5s;
+}
+
+.ListItem:hover {
+  opacity: 0.7;
+}
+
+.ListItem a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
