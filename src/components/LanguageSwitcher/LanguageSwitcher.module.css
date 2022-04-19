@@ -1,0 +1,104 @@
+/* === === === === LanguageSwitcher === === === === */
+
+.LanguageSwitcher {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.LanguageSwitcher-buttonWrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.LanguageSwitcher-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  background: var(--clr-dark-600);
+  color: var(--clr-text-tertiary);
+}
+
+.LanguageSwitcher-button:focus {
+  outline: none;
+}
+
+.LanguageSwitcher-buttonGroup {
+  display: flex;
+  align-items: center;
+}
+
+.LanguageSwitcher-image {
+  display: block;
+}
+
+.LanguageSwitcher-name {
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.LanguageSwitcher-dropdownWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: table;
+  width: 100%;
+}
+
+.LanguageSwitcher-dropdownMenu {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.LanguageSwitcher-dropdownMenu--button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.LanguageSwitcher-dropdownMenu--cross {
+  overflow: hidden;
+}
+
+.LanguageSwitcher-icon {
+  transition: transform 0.2s ease;
+}
+
+.LanguageSwitcher-icon--active {
+  transform: rotate(180deg);
+}
+
+.LanguageSwitcher-list {
+  margin-top: 50px;
+  padding-left: 0;
+}
+
+.LanguageSwitcher-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  background: var(--clr-dark-600);
+  color: var(--clr-text-tertiary);
+  outline: none;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+@media (--phone) {
+  .LanguageSwitcher-name {
+    max-width: 40px;
+  }
+}

@@ -27,7 +27,7 @@ exports[`Page Header Component should render properly 1`] = `
         <input
           class="PageHeader-searchField"
           name="search"
-          placeholder="Placeholder"
+          placeholder="Suche hier nach Usern oder Gruppen..."
           type="text"
           value=""
         />
