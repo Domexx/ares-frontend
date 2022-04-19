@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-shadow */
 /* eslint-disable react/no-array-index-key */
+
 import React from 'react';
 import s from './List.module.css';
 
@@ -17,7 +19,7 @@ const List: React.FC<Props> = ({ items }) => {
           {item.headline}
         </div>
 
-        {item.children.map((children: FooterListChildren) => {
+        {item.children.map((children: FooterListChildren, index: number) => {
           return <ListItem name={children.name} url={children.link} key={index} />;
         })}
       </ul>

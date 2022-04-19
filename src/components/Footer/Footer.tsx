@@ -31,7 +31,7 @@ const Footer: React.FC<Props> = ({ items, description, discord, copyright }) => 
           <p className={s['FooterTop-logoDescription']}>{description}</p>
         </div>
         <List items={items} />
-        <div className={s['FooterTop-misc']}>
+        <div className={`${s['FooterTop-misc']} u-grid`}>
           <div className={s['FooterTop-miscLanguage']}>
             <span className={s['FooterTop-miscLanguageTitle']}>Sprachauswahl</span>
           </div>

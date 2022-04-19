@@ -17,7 +17,7 @@ exports[`Footer Component should render properly 1`] = `
       </p>
     </div>
     <div
-      class="FooterTop-misc"
+      class="FooterTop-misc u-grid"
     >
       <div
         class="FooterTop-miscLanguage"
