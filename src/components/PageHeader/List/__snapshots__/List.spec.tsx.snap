@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component should render properly 1`] = `
+<div
+  class="List u-grid"
+>
+  <ul
+    class="List-main"
+  />
+  <ul
+    class="List-secondary"
+  />
+</div>
+`;

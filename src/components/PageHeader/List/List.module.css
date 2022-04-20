@@ -1,0 +1,58 @@
+/* === === === === PageHeader/List === === === === */
+
+.List {
+  grid-column: 1 / -1;
+}
+
+.List-main {
+  grid-column: 8 / span 3;
+
+  padding: 7px 20px;
+  border-right: 2px solid var(--clr-dark-300);
+  border-left: 2px solid var(--clr-dark-300);
+}
+
+.List-main,
+.List-secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.List-secondary {
+  grid-column: -2;
+}
+
+@media (--laptop) {
+  .List-main {
+    grid-column: 6 / span 3;
+  }
+
+  .List-secondary {
+    grid-column: -3;
+  }
+}
+
+@media (--tablet-landscape) {
+  .List-main {
+    grid-column: 4 / span 3;
+  }
+
+  .List-secondary {
+    grid-column: -2;
+  }
+}
+
+@media (--phone) {
+  .List-main {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    border: none;
+  }
+
+  .List-secondary {
+    grid-row: 1;
+    grid-column: -1;
+  }
+}

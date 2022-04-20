@@ -6,7 +6,14 @@ import PageHeader from './PageHeader';
 
 describe('Page Header Component', () => {
   it('should render properly', () => {
-    const { container } = render(<PageHeader />);
+    const { container } = render(
+      <PageHeader
+        items={{
+          main: [],
+          secondary: [],
+        }}
+      />,
+    );
 
     expect(container.firstChild).toMatchSnapshot();
   });
