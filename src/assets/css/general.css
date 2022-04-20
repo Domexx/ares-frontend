@@ -107,6 +107,10 @@ button {
   .Page-content {
     height: auto;
   }
+
+  .Page-bodyWrapper.menu-Open {
+    margin-left: 260px;
+  }
 }
 
 @media (--phone) {
