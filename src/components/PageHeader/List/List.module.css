@@ -5,7 +5,7 @@
 }
 
 .List-main {
-  grid-column: 8 / span 3;
+  grid-column: 8 / span 4;
 
   padding: 7px 20px;
   border-right: 2px solid var(--clr-dark-300);
@@ -16,8 +16,8 @@
 .List-secondary {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .List-secondary {
@@ -26,7 +26,7 @@
 
 @media (--laptop) {
   .List-main {
-    grid-column: 6 / span 3;
+    grid-column: 6 / span 6;
   }
 
   .List-secondary {
@@ -37,17 +37,19 @@
 @media (--tablet-landscape) {
   .List-main {
     grid-column: 4 / span 3;
+    gap: 20px;
   }
 
   .List-secondary {
-    grid-column: -2;
+    grid-column: -1;
   }
 }
 
 @media (--phone) {
   .List-main {
     grid-row: 1;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
+    gap: 20px;
     border: none;
   }
 

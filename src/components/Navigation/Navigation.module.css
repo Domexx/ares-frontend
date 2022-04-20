@@ -45,8 +45,8 @@
 
 @media (--laptop) {
   .Navigation.is-Active {
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 260px;
+    max-width: 260px;
   }
 
   .Navigation {

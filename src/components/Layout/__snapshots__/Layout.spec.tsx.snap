@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Component should render properly 1`] = `
+<div
+  class="Page"
+>
+  <div
+    class="Page-body"
+  >
+    <div
+      class="Page-bodyWrapper menu-Open"
+    >
+      <main
+        class="Page-inner menu-Open"
+        id="main"
+      />
+    </div>
+  </div>
+</div>
+`;
