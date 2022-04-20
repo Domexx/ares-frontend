@@ -1,8 +1,7 @@
 /* === === === === Navigation === === === === */
 
 .Navigation {
-  position: relative;
-  flex: 0 0 10%;
+  position: fixed;
   order: -1;
   width: 100%;
   min-width: 120px;

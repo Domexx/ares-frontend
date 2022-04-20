@@ -1,0 +1,13 @@
+/* === === === === PageHeader/ListItem === === === === */
+
+.ListItem {
+  transition: opacity 0.4s;
+}
+
+.ListItem:hover {
+  opacity: 0.5;
+}
+
+.ListItem a {
+  outline: none;
+}
