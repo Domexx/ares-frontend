@@ -80,13 +80,21 @@ button {
   display: flex;
   flex: 1 0 auto;
   flex-direction: row;
-  width: 100%;
 }
 
 .Page-bodyWrapper {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  flex-flow: column;
+  transition: all 250ms ease-in-out;
+}
+
+.Page-bodyWrapper.menu-Open {
+  margin-left: 300px;
+}
+
+.Page-bodyWrapper {
+  margin-left: 120px;
 }
 
 .Page-inner {
@@ -98,5 +106,19 @@ button {
 @media (--laptop) {
   .Page-content {
     height: auto;
+  }
+
+  .Page-bodyWrapper.menu-Open {
+    margin-left: 260px;
+  }
+}
+
+@media (--phone) {
+  .Page-bodyWrapper {
+    margin-left: unset;
+  }
+
+  .Page-bodyWrapper.menu-Open {
+    margin-left: unset;
   }
 }

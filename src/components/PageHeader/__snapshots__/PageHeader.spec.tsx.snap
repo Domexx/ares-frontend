@@ -2,44 +2,43 @@
 
 exports[`Page Header Component should render properly 1`] = `
 <header
-  class="PageHeader"
+  class="PageHeader u-grid"
 >
   <div
-    class="PageHeader-top"
+    class="PageHeader-topLeft u-grid"
   >
-    <div
-      class="PageHeader-topLeft"
+    <button
+      class="PageHeader-topLeft-button is-Active"
+      type="button"
     >
-      <button
-        class="PageHeader-topLeft-button is-Active"
-        type="button"
-      >
-        <span />
-        <span />
-        <span />
-      </button>
-      <div
-        class="PageHeader-logo"
+      <span />
+      <span />
+      <span />
+    </button>
+    <div
+      class="PageHeader-logo"
+    />
+    <form
+      class="PageHeader-search"
+    >
+      <input
+        class="PageHeader-searchField"
+        name="search"
+        placeholder="Suche hier nach Usern oder Gruppen..."
+        type="text"
+        value=""
       />
-      <form
-        class="PageHeader-search"
+      <button
+        aria-label="Label"
+        class="PageHeader-searchButton"
+        type="submit"
       >
-        <input
-          class="PageHeader-searchField"
-          name="search"
-          placeholder="Suche hier nach Usern oder Gruppen..."
-          type="text"
-          value=""
-        />
-        <button
-          aria-label="Label"
-          class="PageHeader-searchButton"
-          type="submit"
-        >
-          <svg />
-        </button>
-      </form>
-    </div>
+        <svg />
+      </button>
+    </form>
   </div>
+  <div
+    class="PageHeader-topRight u-grid"
+  />
 </header>
 `;

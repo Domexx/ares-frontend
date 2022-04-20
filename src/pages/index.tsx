@@ -1,17 +1,22 @@
-import Navigation from '@Cosmic/components/Navigation';
-import PageHeader from '@Cosmic/components/PageHeader';
+import Layout from '@Cosmic/components/Layout';
 
 export default function Index() {
   return (
-    <>
-      <PageHeader />
-      <Navigation
-        avatar={{
-          image: '/4e5rtgior',
-          name: 'Dome',
-        }}
-        main={[]}
-      />
-    </>
+    <Layout title="Dashboard">
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+      <h1>Whatever</h1>
+    </Layout>
   );
 }

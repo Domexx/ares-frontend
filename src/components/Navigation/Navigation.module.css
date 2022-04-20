@@ -1,8 +1,7 @@
 /* === === === === Navigation === === === === */
 
 .Navigation {
-  position: relative;
-  flex: 0 0 10%;
+  position: fixed;
   order: -1;
   width: 100%;
   min-width: 120px;
@@ -46,8 +45,8 @@
 
 @media (--laptop) {
   .Navigation.is-Active {
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 260px;
+    max-width: 260px;
   }
 
   .Navigation {

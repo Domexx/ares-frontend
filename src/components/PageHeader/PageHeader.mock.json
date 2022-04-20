@@ -1,0 +1,36 @@
+{
+  "main": [
+    {
+      "id": "cosmic_shop",
+      "name": "Shop",
+      "url": "shop",
+      "icon": "bag"
+    },
+    {
+      "id": "cosmic_friends",
+      "name": "Friends",
+      "url": "friends",
+      "icon": "smile"
+    },
+    {
+      "id": "cosmic_messages",
+      "name": "Messages",
+      "url": "messages",
+      "icon": "messages"
+    },
+    {
+      "id": "cosmic_important_news",
+      "name": "Important",
+      "url": "important-news",
+      "icon": "bell"
+    }
+  ],
+  "secondary": [
+    {
+      "id": "cosmic_settings",
+      "name": "Settings",
+      "url": "settings",
+      "icon": "cog"
+    }
+  ]
+}
