@@ -88,7 +88,7 @@ jobs:
         strategy:
             matrix:
                 node: [12]
-        needs: [lint-format, type-check, unit-test]
+        needs: [lint-format, unit-test]
         steps:
             - name: Checkout Commit
               uses: actions/checkout@v2
@@ -119,7 +119,7 @@ jobs:
         strategy:
             matrix:
                 node: [12]
-        needs: [lint-format, type-check, unit-test]
+        needs: [lint-format, unit-test]
         steps:
             - name: Checkout Commit
               uses: actions/checkout@v2
