@@ -6,7 +6,7 @@ import Layout from './Layout';
 
 describe('Layout Component', () => {
   it('should render properly', () => {
-    const { container } = render(<Layout />);
+    const { container } = render(<Layout title="Test Title" />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
