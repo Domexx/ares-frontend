@@ -185,6 +185,7 @@
         "hygen": "^6.1.0",
         "identity-obj-proxy": "^3.0.0",
         "lint-staged": "^12.3.7",
+        "next-translate": "^1.4.0",
         "postcss": "^8.4.12",
         "postcss-custom-media": "^8.0.0",
         "postcss-loader": "^6.2.1",

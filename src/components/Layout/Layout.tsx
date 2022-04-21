@@ -1,5 +1,6 @@
 import React, { PropsWithChildren, useState } from 'react';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 
 import MenuContext from '../../shared/contexts/MenuContext';
 import Footer from '../Footer';
@@ -11,6 +12,7 @@ export type Props = {
 };
 
 const Layout: React.FC<PropsWithChildren<Props>> = ({ title, children }) => {
+  const { t } = useTranslation('common');
   const [menuOpen, setMenuOpen] = useState(true);
 
   return (
@@ -112,7 +114,7 @@ const Layout: React.FC<PropsWithChildren<Props>> = ({ title, children }) => {
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
               discord="https://discord.gg/uAmqc64S"
               copyright={{
-                title: '© 2022 Cosmic is powered by Nextjs',
+                title: t('footer-copyright'),
                 description: 'This CMS has been developed for the community only.',
               }}
             />
