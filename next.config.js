@@ -1,9 +1,7 @@
+const nextTranslate = require('next-translate');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ['en-US', 'de', 'nl', 'br'],
-    defaultLocale: 'en-US',
-  },
   reactStrictMode: true,
   webpack(config) {
       config.module.rules.push({
@@ -15,4 +13,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports = nextTranslate(nextConfig);
