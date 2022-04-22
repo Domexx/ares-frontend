@@ -24,5 +24,6 @@ Navigation.args = {
   avatar: {
     name: 'Dome',
     image: 'static/images/Navigation/avatar.png',
+    isLoading: false,
   },
 } as Props;

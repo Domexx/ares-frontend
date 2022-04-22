@@ -22,6 +22,7 @@ describe('Navigation Component', () => {
         avatar={{
           image: '/test.png',
           name: 'Dome',
+          isLoading: false,
         }}
       />,
     );

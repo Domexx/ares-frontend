@@ -1,22 +1,6 @@
-import Layout from '@Cosmic/components/Layout';
+import Link from '@Cosmic/elements/Link';
 
 export default function Index() {
-  return (
-    <Layout title="Dashboard">
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-      <h1>Whatever</h1>
-    </Layout>
-  );
+  // eslint-disable-next-line jsx-a11y/anchor-is-valid
+  return <Link url="api/auth/login" text="Login" locale={false} />;
 }
