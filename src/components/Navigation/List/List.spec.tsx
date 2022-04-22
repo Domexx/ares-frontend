@@ -12,12 +12,13 @@ describe('List Component', () => {
 
   beforeAll(() => {
     mockItems = Mock.main.map((item) => {
-      const { name, icon, url, id } = item;
+      const { name, icon, url, id, locale } = item;
       return {
         name,
         icon,
         url,
         id,
+        locale,
       };
     });
   });

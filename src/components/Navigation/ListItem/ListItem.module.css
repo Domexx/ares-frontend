@@ -21,7 +21,8 @@
   background: var(--clr-dark-300);
 }
 
-.ListItem.is-Active {
+.ListItem-active,
+.ListItem-active:hover {
   background: var(--clr-clickable);
   color: var(--clr-dark-500);
 }
@@ -38,12 +39,13 @@
 .ListItem a {
   text-decoration: none;
   color: inherit;
+  outline: none;
 }
 
 .ListItem svg path {
   fill: var(--clr-text-tertiary);
 }
 
-.ListItem.is-Active svg path {
+.ListItem-active svg path {
   fill: var(--clr-dark-500);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import { useRouter } from 'next/router';
 import s from './Navigation.module.css';
 
 import { MenuItem } from '../../shared/interfaces/MenuItem';
@@ -16,6 +17,9 @@ export type Props = {
 const Navigation: React.FC<Props> = ({ avatar, main }) => {
   const { menuOpen } = useMenuContext();
   const activeClass = s['is-Active'];
+  const router = useRouter();
+
+  const pathname = router ? router.pathname : '';
 
   const navClasses = clsx(s['Navigation'], menuOpen ? activeClass : '');
   const itemClasses = clsx(s['ListItem'], menuOpen ? activeClass : '');
@@ -24,7 +28,7 @@ const Navigation: React.FC<Props> = ({ avatar, main }) => {
   return (
     <nav className={navClasses}>
       <Avatar className={avatarClasses} {...avatar} />
-      <List className={itemClasses} items={main} />
+      <List path={pathname} className={itemClasses} items={main} />
     </nav>
   );
 };

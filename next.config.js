@@ -10,6 +10,13 @@ const nextConfig = {
       });
 
       return config;
+  },
+  images: {
+    domains: [
+      'cdn.discordapp.com',
+      'discordapp.com',
+      'habbo.com'
+    ]
   }
 }
 
