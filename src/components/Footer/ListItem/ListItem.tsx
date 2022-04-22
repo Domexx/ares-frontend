@@ -15,7 +15,7 @@ const ListItem: React.FC<Props> = ({ name, url, className }) => {
 
   return (
     <li data-current={name} className={classes}>
-      <AutoExternalLink url={url} text={name} />
+      <AutoExternalLink url={url} text={name} locale />
     </li>
   );
 };
