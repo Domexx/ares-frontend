@@ -27,7 +27,7 @@ Creating a release takes place in Github:
 To create a new component we use [hygen](https://github.com/jondot/hygen) in the background
 
 ```bash
-yarn component Feature
+yarn hygen component new Feature
 ```
 
 Which will generate the following:
