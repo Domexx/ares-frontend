@@ -7,15 +7,24 @@ import ListItem from '../ListItem';
 
 export type Props = {
   items: MenuItem[];
+  path?: string;
   className?: string;
 };
 
-const List: React.FC<Props> = ({ items, className }) => {
+const List: React.FC<Props> = ({ items, path, className }) => {
   const classes = clsx(className);
   const listItems = items.map((item: MenuItem, index: number) => {
     return (
-      // eslint-disable-next-line react/no-array-index-key
-      <ListItem className={classes} name={item.name} icon={item.icon} url={item.url} key={index} />
+      <ListItem
+        className={classes}
+        name={item.name}
+        pathName={path}
+        locale={item.locale}
+        icon={item.icon}
+        url={item.url}
+        // eslint-disable-next-line react/no-array-index-key
+        key={index}
+      />
     );
   });
 

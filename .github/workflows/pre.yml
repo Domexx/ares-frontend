@@ -1,0 +1,146 @@
+name: Cosmic - Main Workflow
+
+on:
+    push:
+        branches:
+            - "**"
+    pull_request:
+        branches:
+            - "**"
+jobs:
+    install-cache:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [12]
+        steps:
+            - name: Checkout Commit
+              uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node }}
+            - name: Cache yarn dependencies
+              uses: actions/cache@v2
+              id: cache-dependencies
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-yarn-
+            - name: Install Dependencies
+              if: steps.cache-dependencies.outputs.cache-hit != 'true' || steps.cache-cypress-binary.outputs.cache-hit != 'true'
+              run: |
+                  yarn install --force --non-interactive
+    lint-format:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node: [12]
+        needs: install-cache
+        steps:
+            - name: Checkout Commit
+              uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node }}
+            - name: Restore yarn dependencies
+              uses: actions/cache@v2
+              id: cache-dependencies
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-yarn-
+            - name: Run lint
+              run: |
+                  yarn lint
+            - name: Run prettier
+              run: |
+                  yarn prettier --check "src/**/*.{tsx,ts,css,scss,md,sass}"
+    unit-test:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node: [12]
+        needs: install-cache
+        steps:
+            - name: Checkout Commit
+              uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node }}
+            - name: Restore yarn dependencies
+              uses: actions/cache@v2
+              id: cache-dependencies
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-yarn-
+            - name: Run test
+              run: |
+                  yarn test --ci --collectCoverage=true --watchAll=false --silent
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node: [12]
+        needs: [lint-format, unit-test]
+        steps:
+            - name: Checkout Commit
+              uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node }}
+            - name: Restore yarn dependencies
+              uses: actions/cache@v2
+              id: cache-dependencies
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-yarn-
+            - name: Run build
+              run: |
+                  yarn build:app
+            - name: Upload build artifacts
+              uses: actions/upload-artifact@v2
+              with:
+                  name: build-output
+                  path: .next
+                  retention-days: 1
+
+    build-storybook:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node: [12]
+        needs: [lint-format, unit-test]
+        steps:
+            - name: Checkout Commit
+              uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node }}
+            - name: Restore yarn dependencies
+              uses: actions/cache@v2
+              id: cache-dependencies
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-yarn-
+            - name: Run Storybook build
+              run: |
+                  yarn build:storybook
+            - name: Upload storybook build artifacts
+              uses: actions/upload-artifact@v2
+              with:
+                  name: storybook-build-output
+                  path: storybook-static
+                  retention-days: 1

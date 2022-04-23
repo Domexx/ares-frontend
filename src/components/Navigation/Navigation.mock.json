@@ -5,6 +5,7 @@
       "name": "News",
       "url": "news",
       "icon": "news",
+      "locale": true,
       "children": []
     },
     {
@@ -12,6 +13,7 @@
       "name": "Statistics",
       "url": "statistics",
       "icon": "statistics",
+      "locale": true,
       "children": []
     },
     {
@@ -19,6 +21,15 @@
       "name": "Users",
       "url": "users",
       "icon": "users",
+      "locale": true,
+      "children": []
+    },
+    {
+      "id": "cosmic_logout",
+      "name": "Logout",
+      "url": "api/auth/logout",
+      "icon": "logout",
+      "locale": false,
       "children": []
     }
   ]
