@@ -1,4 +1,5 @@
 import React from 'react';
+import toast from 'react-hot-toast';
 import Logo from '../../elements/Logo';
 import s from './Footer.module.css';
 
@@ -42,7 +43,11 @@ const Footer: React.FC<Props> = ({ items, description, discord, copyright }) => 
             <p className={s['FooterTop-miscAppDescription']}>
               Downloade dir die Desktop App, um einfacher ins Hotel zukommen.
             </p>
-            <Button>
+            <Button
+              onClick={(): void => {
+                toast.success('Successfully clicked Button');
+              }}
+            >
               <div className={s['FooterTop-miscAppButton']}>
                 <span>HabboSO downloaden</span>
                 <DownloadIcon />

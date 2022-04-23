@@ -22,7 +22,7 @@ export type Props = {
 const Button: React.FC<PropsWithChildren<Props>> = ({
   onClick,
   disabled,
-  loading = true,
+  loading,
   type = 'default',
   align = 'left',
   big,
