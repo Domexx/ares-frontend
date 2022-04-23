@@ -1,0 +1,86 @@
+/* === === === === AvatarSelector === === === === */
+
+.AvatarSelector {
+  margin-top: 0;
+}
+
+.AvatarSelector-logo {
+  display: flex;
+  grid-column: 7 / span 2;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.AvatarSelector-title {
+  display: flex;
+  grid-row: 2;
+  grid-column: 5 / span 6;
+  align-content: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.AvatarSelector-list {
+  display: flex;
+  grid-row: 3;
+  grid-column: 4 / span 8;
+  justify-content: space-between;
+}
+
+.AvatarSelector-button {
+  display: flex;
+  grid-row: 4;
+  grid-column: 7 / span 2;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.AvatarSelector-button svg path {
+  fill: var(--clr-dark-500);
+}
+
+@media (--laptop) {
+  .AvatarSelector-button {
+    grid-column: 6 / span 4;
+  }
+}
+
+@media (--tablet-landscape) {
+  .AvatarSelector-logo {
+    grid-column: 4 / span 10;
+  }
+
+  .AvatarSelector-title {
+    grid-column: 3 / span 12;
+    font-size: 40px;
+  }
+
+  .AvatarSelector-list {
+    grid-column: 4 / span 10;
+  }
+
+  .AvatarSelector-button {
+    grid-column: 4 / span 10;
+  }
+}
+
+@media (--phone) {
+  .AvatarSelector-logo {
+    grid-column: 4 / span 10;
+  }
+
+  .AvatarSelector-title {
+    grid-column: 3 / span 12;
+    font-size: 40px;
+  }
+
+  .AvatarSelector-list {
+    grid-column: 4 / span 10;
+  }
+
+  .AvatarSelector-button {
+    grid-column: 4 / span 10;
+  }
+}
