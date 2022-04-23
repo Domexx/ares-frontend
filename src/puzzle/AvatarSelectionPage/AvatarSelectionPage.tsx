@@ -1,4 +1,4 @@
-import react from 'react;';
+import react from 'react';
 import AvatarSelector, { Props as AvatarSelectionProps } from '../../components/AvatarSelector/AvatarSelector';
 
 export type Props = {
