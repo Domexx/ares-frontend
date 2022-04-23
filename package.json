@@ -99,7 +99,6 @@
     },
     "lint-staged": {
         "src/components/**/*.{css,scss,sass}": [
-            "yarn lint --fix",
             "prettier --write"
         ],
         "src/components/**/*.{tsx,ts,css,scss,md}": [
@@ -109,7 +108,6 @@
             "yarn test --findRelatedTests --bail --ci --watchAll=false --silent"
         ],
         "src/icons/**/*.{css,scss,sass}": [
-            "yarn lint --fix",
             "prettier --write"
         ],
         "src/icons/**/*.{tsx,ts,css,scss,md}": [
@@ -119,7 +117,6 @@
             "yarn test --findRelatedTests --bail --ci --watchAll=false --silent"
         ],
         "src/elements/**/*.{css,scss,sass}": [
-            "yarn lint --fix",
             "prettier --write"
         ],
         "src/elements/**/*.{tsx,ts,css,scss,md}": [

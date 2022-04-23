@@ -2,7 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # Checks with Eslint and Stylelint
-yarn lint
+# yarn lint
 yarn test --ci --collectCoverage=true --watchAll=false --silent
 yarn prettier --check "src/**/*.{tsx,ts,css,scss,md,sass}"
 
