@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component should render properly 1`] = `
+<div
+  class="Title"
+>
+  <svg />
+  <div
+    class="Title-container"
+  >
+    <h1
+      class="Title-name"
+    >
+      Test Title
+    </h1>
+    <p
+      class="Title-description"
+    >
+      Test description
+    </p>
+  </div>
+</div>
+`;

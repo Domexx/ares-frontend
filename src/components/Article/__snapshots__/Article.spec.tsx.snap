@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article Component should render properly 1`] = `
+<section
+  class="Article u-grid"
+>
+  <div
+    class="List u-grid "
+  />
+</section>
+`;
