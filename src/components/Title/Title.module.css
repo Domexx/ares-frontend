@@ -1,0 +1,22 @@
+/* === === === === Title === === === === */
+
+.Title {
+  display: flex;
+  flex-direction: row;
+}
+
+.Title-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Title-title {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.Title-description {
+  font-size: 12px;
+}
