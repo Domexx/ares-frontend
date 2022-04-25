@@ -23,7 +23,7 @@ const Title: React.FC<PropsWithChildren<Props>> = ({ title, description, iconIde
     <div className={s['Title']}>
       {selectedIcon}
       <div className={`${s['Title-container']}`}>
-        <h2 className={`${s['Title-name']}`}>{title}</h2>
+        <h1 className={`${s['Title-name']}`}>{title}</h1>
         <p className={`${s['Title-description']}`}>{description}</p>
       </div>
       {children}

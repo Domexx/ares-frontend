@@ -8,16 +8,16 @@ exports[`Title Component should render properly 1`] = `
   <div
     class="Title-container"
   >
-    <div
-      class="Title-title"
+    <h1
+      class="Title-name"
     >
       Test Title
-    </div>
-    <div
+    </h1>
+    <p
       class="Title-description"
     >
       Test description
-    </div>
+    </p>
   </div>
 </div>
 `;

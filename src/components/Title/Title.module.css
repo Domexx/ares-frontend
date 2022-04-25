@@ -12,12 +12,12 @@
 }
 
 .Title-name {
-  line-height: 1;
   font-size: 14px;
+  line-height: 1;
   text-transform: uppercase;
 }
 
 .Title-description {
-  line-height: 1;
   font-size: 12px;
+  line-height: 1;
 }
