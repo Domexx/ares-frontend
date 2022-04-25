@@ -9,9 +9,9 @@ export type Props = {
 
 export const LandingPage: React.FC<Props> = ({ article }) => {
   return (
-    <div>
+    <>
       <Title title="Actual News" description="What are the highlights within our hotel?" iconIdentifier="news" />
       <Article {...article} />
-    </div>
+    </>
   );
 };
