@@ -22,7 +22,9 @@ exports[`List Item Component should render properly 1`] = `
   >
     <div
       class="ListItem-category"
-    />
+    >
+      Habbo
+    </div>
     <div
       class="ListItem-date"
     >

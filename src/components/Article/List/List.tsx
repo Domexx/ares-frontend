@@ -17,7 +17,6 @@ const List: React.FC<Props> = ({ items }) => {
         image={item.image}
         date={item.date}
         category={item.category}
-        content={item.content}
         // eslint-disable-next-line react/no-array-index-key
         key={index}
       />

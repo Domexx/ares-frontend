@@ -10,9 +10,9 @@ describe('List Item Component', () => {
       <ListItem
         title="Test Title"
         description="Test Description"
-        image={'https://images.habbo.com/web_images/habbo-web-articles/lpromo_jan21_gen.png'}
+        image="https://images.habbo.com/web_images/habbo-web-articles/lpromo_jan21_gen.png"
         date={0}
-        category={''}
+        category="Habbo"
       />,
     );
 
