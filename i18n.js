@@ -1,8 +1,9 @@
 module.exports = {
-  locales: ['de'],
+  locales: ['de', 'en-US'],
   defaultLocale: 'de',
   pages: {
     '*': ['common'],
-    '/': ['dashboard']
+    '/': ['dashboard'],
+    '/maintenance': ['maintenance']
   },
 };

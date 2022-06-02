@@ -1,4 +1,5 @@
 import { useFormik } from 'formik';
+import useTranslation from 'next-translate/useTranslation';
 import React from 'react';
 import toast from 'react-hot-toast';
 import Button from '../../../elements/Button';
@@ -11,12 +12,14 @@ export type Props = {
 };
 
 const BetaInput: React.FC<Props> = ({ headline, description, ctaText }) => {
+  const { t } = useTranslation('maintenance');
+
   const form = useFormik({
     initialValues: {
       code: '',
     },
     onSubmit: () => {
-      toast.error('Warte ab bis diese Funktion freigeschaltet wurde!');
+      toast.error(t('not_available'));
     },
   });
 
@@ -30,14 +33,14 @@ const BetaInput: React.FC<Props> = ({ headline, description, ctaText }) => {
           className={s['BetaInput-element']}
           id="code"
           name="code"
-          placeholder="Bitte code eingeben"
+          placeholder={t('insert_code')}
           type="text"
           onChange={form.handleChange}
           value={form.values.code}
         />
         <Button className={s['BetaInput-button']}>{ctaText}</Button>
       </form>
-      <p className={s['BetaInput-info']}>Aktuell nicht verfügbar</p>
+      <p className={s['BetaInput-info']}>{t('not_enabled')}</p>
     </div>
   );
 };
