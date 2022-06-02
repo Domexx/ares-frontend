@@ -21,7 +21,7 @@
     "incremental": true,
     "isolatedModules": true,
     "paths": {
-      "@Cosmic/*": ["src/*"]
+      "@Ares/*": ["src/*"]
     }
   },
   "include": ["./src", "next-env.d.ts", "index.d.ts", ".eslintrc"],

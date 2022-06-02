@@ -1,4 +1,6 @@
 @import './fonts.css';
+@import './typography.css';
 @import './variables.css';
 @import './general.css';
 @import './grid.css';
+@import './components/tabs.css';
