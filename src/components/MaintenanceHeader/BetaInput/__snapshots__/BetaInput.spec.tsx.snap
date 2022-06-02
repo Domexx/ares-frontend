@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Beta Input Component should render properly 1`] = `
+<div
+  class="BetaInput"
+>
+  <h1
+    class="BetaInput-headline title"
+  >
+    TestHeadline
+  </h1>
+  <p
+    class="BetaInput-description"
+  >
+    Test description
+  </p>
+  <form
+    class="BetaInput-form"
+  >
+    <input
+      class="BetaInput-element"
+      disabled=""
+      id="code"
+      name="code"
+      placeholder="Bitte code eingeben"
+      type="text"
+      value=""
+    />
+  </form>
+  <p
+    class="BetaInput-info"
+  >
+    Aktuell nicht verfügbar
+  </p>
+</div>
+`;

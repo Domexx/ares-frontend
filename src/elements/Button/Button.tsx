@@ -10,6 +10,7 @@ type ButtonAlign = 'left' | 'right' | 'center';
 export type Props = {
   onClick?: () => void;
   disabled?: boolean;
+  submit?: boolean;
   loading?: boolean;
   type?: ButtonType;
   align?: ButtonAlign;
@@ -49,7 +50,7 @@ const Button: React.FC<PropsWithChildren<Props>> = ({
 
   // Render functional Button (default)
   return (
-    <button type="button" className={classNames} onClick={handleClick} {...rest}>
+    <button type="submit" className={classNames} onClick={handleClick} {...rest}>
       {children}
     </button>
   );

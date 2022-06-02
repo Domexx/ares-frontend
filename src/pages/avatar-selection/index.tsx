@@ -1,5 +1,5 @@
 import { withPageAuthRequired } from '@auth0/nextjs-auth0';
-import AvatarSelector from '@Cosmic/components/AvatarSelector';
+import AvatarSelector from '@Ares/components/AvatarSelector';
 
 function Index() {
   return (

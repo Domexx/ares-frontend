@@ -1,0 +1,75 @@
+/* === === === === WhyUs/MemberTab === === === === */
+
+.MemberTab {
+  margin-top: 48px;
+}
+
+.MemberTab-item {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 14;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.MemberTab-avatar {
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--clr-dark-400);
+}
+
+.MemberTab-itemContent {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--clr-dark-600);
+}
+
+.MemberTab-itemDescription {
+  color: var(--clr-dark-200);
+}
+
+@media (--tablet-landscape) {
+  .MemberTab-item {
+    grid-column: 1 / span 16;
+  }
+
+  .MemberTab-itemDescription {
+    font-size: 14px;
+  }
+}
+
+@media (--tablet) {
+  .MemberTab-itemContent {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .MemberTab-itemDescription {
+    font-size: 14px;
+  }
+}
+
+@media (--phone) {
+  .MemberTab {
+    margin-top: 5px;
+  }
+
+  .MemberTab-item {
+    grid-column: 2 / span 14;
+    margin-top: 50px;
+  }
+
+  .MemberTab-itemContent {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .MemberTab-itemDescription {
+    font-size: 14px;
+  }
+}

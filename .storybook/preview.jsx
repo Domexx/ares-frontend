@@ -4,6 +4,8 @@ import { MemoryRouter } from 'react-router';
 import { withPerformance } from 'storybook-addon-performance';
 
 import '../src/assets/css/main.css';
+import 'react-loading-skeleton/dist/skeleton.css';
+import 'react-tabs/style/react-tabs.css';
 
 import * as NextImage from 'next/image';
 

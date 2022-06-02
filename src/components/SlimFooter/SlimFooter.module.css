@@ -1,0 +1,16 @@
+/* === === === === SlimFooter === === === === */
+
+.SlimFooter {
+  width: 100%;
+  margin-top: 50px;
+  padding: 28px;
+  text-align: center;
+  background: var(--clr-dark-500);
+  color: var(--clr-dark-200);
+}
+
+@media (--phone) {
+  .SlimFooter {
+    font-size: 12px;
+  }
+}

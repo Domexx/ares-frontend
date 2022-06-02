@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Member Tab Component should render properly 1`] = `
+<div
+  class="MemberTab u-grid"
+>
+  <div
+    class="MemberTab-item"
+  >
+    <h1
+      class="title"
+    >
+      Council:
+    </h1>
+    <div
+      class="MemberTab-itemContent"
+    >
+      <div
+        class="MemberTab-avatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="MemberTab-itemName title"
+      >
+        Virtual
+      </div>
+      <p
+        class="MemberTab-itemDescription"
+      >
+        Jelly sweet tart icing muffin wafer. Tootsie roll lemon drops oat cake chupa chups gummies.
+      </p>
+    </div>
+    <div
+      class="MemberTab-itemContent"
+    >
+      <div
+        class="MemberTab-avatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="MemberTab-itemName title"
+      >
+        Virtual
+      </div>
+      <p
+        class="MemberTab-itemDescription"
+      >
+        Jelly sweet tart icing muffin wafer. Tootsie roll lemon drops oat cake chupa chups gummies.
+      </p>
+    </div>
+    <div
+      class="MemberTab-itemContent"
+    >
+      <div
+        class="MemberTab-avatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="MemberTab-itemName title"
+      >
+        Virtual
+      </div>
+      <p
+        class="MemberTab-itemDescription"
+      >
+        Jelly sweet tart icing muffin wafer. Tootsie roll lemon drops oat cake chupa chups gummies.
+      </p>
+    </div>
+  </div>
+  <div
+    class="MemberTab-item"
+  >
+    <h1
+      class="title"
+    >
+      Developer:
+    </h1>
+    <div
+      class="MemberTab-itemContent"
+    >
+      <div
+        class="MemberTab-avatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="MemberTab-itemName title"
+      >
+        Virtual
+      </div>
+      <p
+        class="MemberTab-itemDescription"
+      >
+        Jelly sweet tart icing muffin wafer. Tootsie roll lemon drops oat cake chupa chups gummies.
+      </p>
+    </div>
+    <div
+      class="MemberTab-itemContent"
+    >
+      <div
+        class="MemberTab-avatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="MemberTab-itemName title"
+      >
+        Virtual
+      </div>
+      <p
+        class="MemberTab-itemDescription"
+      >
+        Jelly sweet tart icing muffin wafer. Tootsie roll lemon drops oat cake chupa chups gummies.
+      </p>
+    </div>
+    <div
+      class="MemberTab-itemContent"
+    >
+      <div
+        class="MemberTab-avatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="MemberTab-itemName title"
+      >
+        Virtual
+      </div>
+      <p
+        class="MemberTab-itemDescription"
+      >
+        Jelly sweet tart icing muffin wafer. Tootsie roll lemon drops oat cake chupa chups gummies.
+      </p>
+    </div>
+  </div>
+</div>
+`;

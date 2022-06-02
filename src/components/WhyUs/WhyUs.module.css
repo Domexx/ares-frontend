@@ -1,0 +1,51 @@
+/* === === === === WhyUs === === === === */
+
+.WhyUs {
+  margin-top: 80px;
+}
+
+.WhyUs-headline,
+.WhyUs-description {
+  grid-column: 5 / span 6;
+  text-align: center;
+}
+
+.WhyUs-description {
+  margin-top: 20px;
+  padding: 0 50px 0 50px;
+  font-size: 12px;
+  color: var(--clr-dark-200);
+}
+
+.WhyUs-tabs {
+  grid-row: 3;
+  grid-column: 3 / span 10;
+}
+
+@media (--tablet-landscape) {
+  .WhyUs-headline,
+  .WhyUs-description {
+    grid-column: 2 / span 14;
+    text-align: center;
+  }
+
+  .WhyUs-tabs {
+    grid-column: 2 / span 14;
+  }
+}
+
+@media (--phone) {
+  .WhyUs-headline,
+  .WhyUs-description {
+    grid-column: 2 / span 14;
+    text-align: center;
+  }
+
+  .WhyUs-description {
+    padding: 0;
+  }
+
+  .WhyUs-tabs {
+    grid-column: 1 / -1;
+  }
+}

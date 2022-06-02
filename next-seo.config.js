@@ -2,8 +2,8 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://cosmic.dev/',
-    site_name: 'Cosmic',
+    url: 'https://habbo.ac/',
+    site_name: 'Habbo',
   },
   twitter: {
     handle: '@handle',
