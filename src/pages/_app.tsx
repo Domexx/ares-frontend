@@ -8,6 +8,7 @@ import SEO from '../../next-seo.config';
 
 import '../assets/css/main.css';
 import 'react-loading-skeleton/dist/skeleton.css';
+import 'react-tabs/style/react-tabs.css';
 
 function App({ Component, pageProps }) {
   return (

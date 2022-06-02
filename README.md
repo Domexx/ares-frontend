@@ -1,4 +1,4 @@
-# Cosmic Ares Frontend
+# Ares Ares Frontend
 
 A website that uses nextjs 12 and storybook.
 

@@ -1,0 +1,139 @@
+/* === === === === WhyUs/SneakTab === === === === */
+
+.SneakTab {
+  margin-top: 40px;
+}
+
+.SneakTab-item {
+  display: flex;
+}
+
+.SneakTab-itemContent {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.SneakTab-itemDescription {
+  font-size: 16px;
+  color: var(--clr-dark-200);
+}
+
+.SneakTab-item:nth-of-type(1) {
+  grid-row: 1;
+  grid-column: 1 / span 7;
+}
+
+.SneakTab-item:nth-of-type(2) {
+  grid-row: 2;
+  grid-column: 7 / span 7;
+}
+
+.SneakTab-item:nth-of-type(3) {
+  grid-row: 3;
+  grid-column: 1 / span 7;
+}
+
+.SneakTab-item:nth-of-type(4) {
+  grid-row: 4;
+  grid-column: 7 / span 7;
+}
+
+.SneakTab-item:nth-of-type(5) {
+  grid-row: 5;
+  grid-column: 1 / span 7;
+}
+
+.SneakTab-item:nth-of-type(6) {
+  grid-row: 6;
+  grid-column: 7 / span 7;
+  gap: 20px;
+}
+
+@media (--tablet-landscape) {
+  .SneakTab-item {
+    margin-top: 60px;
+  }
+
+  .SneakTab-item:nth-of-type(1) {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+  }
+
+  .SneakTab-item:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 6 / span 10;
+  }
+
+  .SneakTab-item:nth-of-type(3) {
+    grid-row: 3;
+    grid-column: 2 / span 12;
+  }
+
+  .SneakTab-item:nth-of-type(4) {
+    grid-row: 4;
+    grid-column: 6 / span 10;
+  }
+
+  .SneakTab-item:nth-of-type(5) {
+    grid-row: 5;
+    grid-column: 2 / span 12;
+  }
+
+  .SneakTab-item:nth-of-type(6) {
+    grid-row: 6;
+    grid-column: 6 / span 10;
+    gap: 20px;
+  }
+}
+
+@media (--phone) {
+  .SneakTab-item {
+    flex-direction: column;
+    grid-column: 1 / -1;
+    gap: 30px;
+  }
+
+  .SneakTab-itemTitle {
+    font-size: 20px;
+  }
+
+  .SneakTab-itemDescription {
+    font-size: 12px;
+  }
+
+  .SneakTab-itemContent {
+    padding: 0 30px 0 30px;
+  }
+
+  .SneakTab-item:nth-of-type(1) {
+    grid-row: 1;
+    grid-column: 1 / -1;
+  }
+
+  .SneakTab-item:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  .SneakTab-item:nth-of-type(3) {
+    grid-row: 3;
+    grid-column: 1 / -1;
+  }
+
+  .SneakTab-item:nth-of-type(4) {
+    grid-row: 4;
+    grid-column: 1 / -1;
+  }
+
+  .SneakTab-item:nth-of-type(5) {
+    grid-row: 5;
+    grid-column: 1 / -1;
+  }
+
+  .SneakTab-item:nth-of-type(6) {
+    grid-row: 6;
+    grid-column: 1 / -1;
+  }
+}

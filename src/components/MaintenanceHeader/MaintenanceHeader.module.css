@@ -1,0 +1,49 @@
+/* === === === === Header === === === === */
+
+.MaintenanceHeader {
+  height: 100%;
+  min-height: 700px;
+}
+
+.MaintenanceHeader-backgroundWrapper {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  height: 100%;
+}
+
+.MaintenanceHeader-logo {
+  grid-column: 3 / span 2;
+}
+
+.MaintenanceHeader-lswitcher {
+  grid-column: 12 / span 1;
+}
+
+.MaintenanceHeader-content {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+@media (--tablet-landscape) {
+  .MaintenanceHeader-lswitcher {
+    grid-column: 14 / span 2;
+  }
+}
+
+@media (--phone) {
+  .MaintenanceHeader-lswitcher {
+    display: none;
+  }
+
+  .MaintenanceHeader-content {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 14;
+    align-items: center;
+    justify-content: center;
+  }
+}

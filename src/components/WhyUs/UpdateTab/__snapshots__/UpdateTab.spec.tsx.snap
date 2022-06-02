@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Update Tab Component should render properly 1`] = `
+<div
+  class="UpdateTab"
+>
+  <div
+    class="UpdateTab-item"
+  >
+    <div
+      class="UpdateTab-head"
+    >
+      <div
+        class="UpdateTab-headAvatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="UpdateTab-headText"
+      >
+        <p
+          class="UpdateTab-headText-update"
+        >
+          Virtual
+           hat ein Update gepostet.
+        </p>
+        <span
+          class="UpdateTab-headText-date"
+        >
+          am 
+          08.05.2021
+        </span>
+      </div>
+    </div>
+    <p
+      class="UpdateTab-text"
+    >
+      Putz dich fein heraus um dann elegant über den Habbo-Laufsteg zu gleiten.Das wird ein Spass!
+    </p>
+    <div
+      class="UpdateTab-itemContent"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 57.02054794520548% 0px 0px 0px;"
+        />
+        <img
+          alt="Virtual"
+          data-nimg="responsive"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+        />
+        <noscript />
+      </span>
+    </div>
+    <div
+      class="UpdateTab-foot"
+    >
+      <span
+        class="UpdateTab-tag"
+      >
+        Client
+      </span>
+      <span
+        class="UpdateTab-tag"
+      >
+        Event
+      </span>
+    </div>
+  </div>
+  <div
+    class="UpdateTab-item"
+  >
+    <div
+      class="UpdateTab-head"
+    >
+      <div
+        class="UpdateTab-headAvatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="UpdateTab-headText"
+      >
+        <p
+          class="UpdateTab-headText-update"
+        >
+          Virtual
+           hat ein Update gepostet.
+        </p>
+        <span
+          class="UpdateTab-headText-date"
+        >
+          am 
+          08.05.2021
+        </span>
+      </div>
+    </div>
+    <p
+      class="UpdateTab-text"
+    >
+      Putz dich fein heraus um dann elegant über den Habbo-Laufsteg zu gleiten.Das wird ein Spass!
+    </p>
+    <div
+      class="UpdateTab-itemContent"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 57.02054794520548% 0px 0px 0px;"
+        />
+        <img
+          alt="Virtual"
+          data-nimg="responsive"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+        />
+        <noscript />
+      </span>
+    </div>
+    <div
+      class="UpdateTab-foot"
+    >
+      <span
+        class="UpdateTab-tag"
+      >
+        Client
+      </span>
+      <span
+        class="UpdateTab-tag"
+      >
+        Event
+      </span>
+    </div>
+  </div>
+  <div
+    class="UpdateTab-item"
+  >
+    <div
+      class="UpdateTab-head"
+    >
+      <div
+        class="UpdateTab-headAvatar"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 64px; height: 110px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="Virtual"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="UpdateTab-headText"
+      >
+        <p
+          class="UpdateTab-headText-update"
+        >
+          Virtual
+           hat ein Update gepostet.
+        </p>
+        <span
+          class="UpdateTab-headText-date"
+        >
+          am 
+          08.05.2021
+        </span>
+      </div>
+    </div>
+    <p
+      class="UpdateTab-text"
+    >
+      Putz dich fein heraus um dann elegant über den Habbo-Laufsteg zu gleiten.Das wird ein Spass!
+    </p>
+    <div
+      class="UpdateTab-itemContent"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 57.02054794520548% 0px 0px 0px;"
+        />
+        <img
+          alt="Virtual"
+          data-nimg="responsive"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+        />
+        <noscript />
+      </span>
+    </div>
+    <div
+      class="UpdateTab-foot"
+    >
+      <span
+        class="UpdateTab-tag"
+      >
+        Client
+      </span>
+      <span
+        class="UpdateTab-tag"
+      >
+        Event
+      </span>
+    </div>
+  </div>
+</div>
+`;

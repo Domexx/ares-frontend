@@ -1,4 +1,4 @@
-import Link from '@Cosmic/elements/Link';
+import Link from '@Ares/elements/Link';
 
 export default function Index() {
   // eslint-disable-next-line jsx-a11y/anchor-is-valid

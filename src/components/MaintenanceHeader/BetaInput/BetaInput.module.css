@@ -1,0 +1,70 @@
+/* === === === === BetaInput === === === === */
+
+.BetaInput {
+  display: flex;
+  flex-direction: column;
+  grid-column: 5 / span 6;
+  gap: 30px;
+  text-align: center;
+}
+
+.BetaInput-description {
+  padding: 0 50px 0 50px;
+  font-size: 12px;
+}
+
+.BetaInput-form {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.BetaInput-button {
+  width: 200px;
+}
+
+.BetaInput-element {
+  width: 100%;
+  padding: 25px;
+  border: none;
+  border-radius: 4px;
+  background: var(--clr-dark-400);
+  color: var(--clr-text-primary);
+  outline: none;
+}
+
+.BetaInput-info {
+  font-size: 12px;
+}
+
+@media (--tablet-landscape) {
+  .BetaInput {
+    grid-column: 3 / span 12;
+  }
+}
+
+@media (--tablet) {
+  .BetaInput {
+    grid-column: 2 / span 14;
+  }
+}
+
+@media (--phone) {
+  .BetaInput-headline {
+    margin-top: 30px;
+  }
+
+  .BetaInput-description {
+    padding: 0;
+  }
+
+  .BetaInput-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .BetaInput-button {
+    width: 100%;
+  }
+}

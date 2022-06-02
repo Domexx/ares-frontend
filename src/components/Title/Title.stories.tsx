@@ -17,7 +17,7 @@ export default Component;
 
 // https://storybook.js.org/docs/react/essentials/controls
 Title.args = {
-  title: 'Cosmic lmao',
+  title: 'Ares lmao',
   description: 'This is a very cool Title',
   iconIdentifier: 'news',
 } as Props;
