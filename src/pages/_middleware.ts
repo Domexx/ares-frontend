@@ -5,7 +5,6 @@ export default function Middleware(req: NextRequest) {
   const url = req.nextUrl.clone();
   const xurl: string = req.url;
   const baseUrl: string = req.nextUrl.origin;
-  const { pathname, basePath } = req.nextUrl;
 
   // Simulate connection with a redis cache
   const isInMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE;
@@ -25,7 +24,7 @@ export default function Middleware(req: NextRequest) {
     url.pathname = `/maintenance`;
 
     // Rewrite to the url
-    return NextResponse.rewrite(new URL(`${basePath}/${pathname}`, req.nextUrl.origin).toString());
+    return NextResponse.rewrite(url);
   }
 
   return NextResponse.next();
