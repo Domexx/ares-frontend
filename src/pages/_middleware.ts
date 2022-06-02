@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-export async function middleware(req: NextRequest) {
+export function middleware(req: NextRequest) {
   // Clone the URL
   const url = req.nextUrl.clone();
   const xurl: string = req.url;
@@ -26,4 +26,6 @@ export async function middleware(req: NextRequest) {
     // Rewrite to the url
     return NextResponse.rewrite(url);
   }
+    
+  return NextResponse.next();
 }
