@@ -1,0 +1,55 @@
+{
+    "not_available": "Diese Funktion ist aktuell noch nicht verfügbar!",
+    "not_enabled": "Aktuell nicht verfügbar",
+    "updated_posted": "hat ein Update geposted",
+    "updated_date": "am",
+    "insert_code": "Bitte code eingeben",
+    "header": {
+        "input_headline": "Tritt unserer Beta bei",
+        "input_description": "Als Beta-User hast du die Möglichkeit das Hotel schon vor Eröffnung zu betreten, ausgiebig zu testen und mit uns zu optimieren, bevor es endgültig eröffnet wird",
+        "input_cta": "Ins Beta Hotel"
+    },
+    "why_us": {
+        "headline": "Was macht uns besonders?",
+        "description": "Unser Projekt ist darauf ausgelegt, sich von der Masse abzuheben, etwas neues darzustellen, eine neue Ära an den Tag zu legen. Wir legen viel Wert auf Professionalität, Sicherheit und vor allem Spielspaß!",
+        "sneaks": {
+            "title": "Sneaks",
+            "item_profile_title": "Profilvervollständigung",
+            "item_profile_description": "Im Habbo.ac kannst du neben deinem Avatar auch dein eigenes Profil erstellen. Dabei nehmen wir dich an die Hand und zeigen dir Schritt für Schritt wie du dein Profil vervollständigst.",
+            "item_groups_title": "Gruppen",
+            "item_groups_description": "Das Habbo.ac bietet dir ein neues Gruppensystem an. Sowohl der alte Stil im Hotel, als auch das betreten und verlassen von Gruppen außerhalb des Clients wird dir ermöglicht um immer und jederzeit aktuell zu sein.",
+            "item_calendar_title": "Eventkalender",
+            "item_calendar_description": "Zwischen den ganzen Events die es im Hotel geben wird, verliert man schnell den Überblick. Das wissen wir zu verhindern. Du kannst jederzeit alle geplanten Events im Eventkalender finden und dich auf tolle Preise vorbereiten",
+            "item_client_title": "Neuartiges Clientdesign",
+            "item_client_description": "Die Homepage ist nicht alles. Im Habbo.ac wird es einen noch nie dagewesenes Clientdesign geben, was perfekt auf das Design unserer Homepage abgestimmt ist.",
+            "item_navigator_title": "Navigator",
+            "item_navigator_description": "Viele Räume erzeugen viel durcheinander. Der neue und überarbeitete Navigator hilft dir dabei das Problem zu verhindern. Die Auswahl zwischen verschiedenen Kriterien und Kategorien ermöglicht dir deine Interessen besser abdecken zu können.",
+            "item_friends_title": "Mit Freunden chatten",
+            "item_friends_description": "Es gibt viele Möglichkeiten, im Habbo.ac, dich mit deinen Freunden zu unterhalten. Das Design richtet sich nach bekannten Messengern, damit du dich direkt wohl fühlen kannst."
+        },
+        "team": {
+            "title": "Team",
+            "title_owner": "Gründer:",
+            "virtual_profession": "Gründer und Besitzer des Projektes. Bei Fragen immer erreichbar!",
+            "seidou_profession": "Mitgründer und Besitzer des Projektes. Kümmert sich um diverse serverseitige Angelegenheiten."
+        },
+        "updates": {
+            "title": "News",
+            "item_bwr": {
+                "text": "Wir brauchen deine Hilfe! Meld dich bei uns im Discord wenn du Interesse am Projekt hast und uns bei der Umsetzung helfen möchtest.",
+                "tag_first": "Team",
+                "tag_second": "BWR"
+            },
+            "item_discord": {
+                "text": "Der Discord-Server wurde eröffnet und ihr habt nun die Möglichkeit euch zu unterhalten. Vorschläge mit uns zu teilen und einfach ein bisschen rumzuhängen.",
+                "tag_first": "Discord",
+                "tag_second": "Community"
+            },
+            "item_giveaway": {
+                "text": "Gewinnspiel auf unserem Discord-Server! Tritt einfach bei und schon bist du dabei. Verlost werden 3 x 20€ Gutscheine eurer Wahl!",
+                "tag_first": "Discord",
+                "tag_second": "Gewinnspiel"
+            }
+        }
+    }
+}

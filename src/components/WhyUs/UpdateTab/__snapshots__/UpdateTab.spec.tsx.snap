@@ -33,12 +33,14 @@ exports[`Update Tab Component should render properly 1`] = `
           class="UpdateTab-headText-update"
         >
           Virtual
-           hat ein Update gepostet.
+           
+          updated_posted
         </p>
         <span
           class="UpdateTab-headText-date"
         >
-          am 
+          updated_date
+           
           08.05.2021
         </span>
       </div>
@@ -111,12 +113,14 @@ exports[`Update Tab Component should render properly 1`] = `
           class="UpdateTab-headText-update"
         >
           Virtual
-           hat ein Update gepostet.
+           
+          updated_posted
         </p>
         <span
           class="UpdateTab-headText-date"
         >
-          am 
+          updated_date
+           
           08.05.2021
         </span>
       </div>
@@ -189,12 +193,14 @@ exports[`Update Tab Component should render properly 1`] = `
           class="UpdateTab-headText-update"
         >
           Virtual
-           hat ein Update gepostet.
+           
+          updated_posted
         </p>
         <span
           class="UpdateTab-headText-date"
         >
-          am 
+          updated_date
+           
           08.05.2021
         </span>
       </div>

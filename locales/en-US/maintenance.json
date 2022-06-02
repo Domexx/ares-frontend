@@ -1,0 +1,55 @@
+{
+    "not_available": "This function is currently not yet available!",
+    "not_enabled": "Currently not available",
+    "updated_posted": "has posted an update",
+    "insert_code": "Please insert your code here",
+    "updated_date": "on",
+    "header": {
+        "input_headline": "Join our Beta",
+        "input_description": "As a beta user, you have the opportunity to enter the hotel before it opens, to test it extensively and to optimize it with us before it finally opens",
+        "input_cta": "To the Beta Hotel"
+    },
+    "why_us": {
+        "headline": "Why choose us?",
+        "description": "Our project is designed to stand out from the crowd, represent something new, show a new era. We attach great importance to professionalism, security and above all fun!",
+        "sneaks": {
+            "title": "Sneaks",
+            "item_profile_title": "Profile Completion",
+            "item_profile_description": "In Habbo.ac you can create your own profile in addition to your avatar. We will take you by the hand and show you step by step how to complete your profile.",
+            "item_groups_title": "Groups",
+            "item_groups_description": "The Habbo.ac offers you a new group system. Both the old style in the hotel, as well as entering and leaving groups outside of the client, allows you to be up-to-date at all times.",
+            "item_calendar_title": "Event Calendar",
+            "item_calendar_description": "Between all the events that will be taking place in the hotel, you quickly lose track of things. We know how to prevent that. You can always find all planned events in the event calendar and prepare yourself for great prizes.",
+            "item_client_title": "New Client",
+            "item_client_description": "The homepage is not everything. In Habbo.ac there will be an unprecedented client design, which is perfectly matched to the design of our homepage.",
+            "item_navigator_title": "Navigator",
+            "item_navigator_description": "Many rooms create a lot of confusion. The new and revised navigator will help you prevent the problem. The choice between different criteria and categories allows you to better cover your interests.",
+            "item_friends_title": "Chat with friends",
+            "item_friends_description": "There are many ways to chat with your friends on Habbo.ac. The design is based on well-known messengers, so you can feel comfortable right away."
+        },
+        "team": {
+            "title": "Team",
+            "title_owner": "Owner",
+            "virtual_profession": "Founder and curator of project. Always available for questions!",
+            "seidou_profession": "Co-founder and owner of the project. Takes care of various server-side matters"
+        },
+        "updates": {
+            "title": "News",
+            "item_bwr": {
+                "text": "We need your help! Get in touch with us on Discord if you are interested in the project and would like to help us with the implementation",
+                "tag_first": "Team",
+                "tag_second": "Application"
+            },
+            "item_discord": {
+                "text": "The Discord server has been launched and you now have the opportunity to chat, share suggestions with us and just hang out with eachother",
+                "tag_first": "Discord",
+                "tag_second": "Community"
+            },
+            "item_giveaway": {
+                "text": "Giveaway on our Discord server! Just join and you're in. 3 x 20 € vouchers of your choice will be raffled!",
+                "tag_first": "Discord",
+                "tag_second": "Giveaway"
+            }
+        }
+    }
+}

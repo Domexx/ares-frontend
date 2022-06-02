@@ -22,7 +22,7 @@ exports[`Beta Input Component should render properly 1`] = `
       disabled=""
       id="code"
       name="code"
-      placeholder="Bitte code eingeben"
+      placeholder="insert_code"
       type="text"
       value=""
     />
@@ -30,7 +30,7 @@ exports[`Beta Input Component should render properly 1`] = `
   <p
     class="BetaInput-info"
   >
-    Aktuell nicht verfügbar
+    not_enabled
   </p>
 </div>
 `;

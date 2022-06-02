@@ -9,8 +9,6 @@ export default function Middleware(req: NextRequest) {
   // Simulate connection with a redis cache
   const isInMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE;
 
-  console.log(url.pathname);
-
   if (url.pathname.includes('.') || url.pathname.includes('_next/image')) {
     return NextResponse.next();
   }
