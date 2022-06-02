@@ -4,12 +4,12 @@ export default function Middleware(req: NextRequest) {
   // Clone the URL
   const url = req.nextUrl.clone();
 
-  url.searchParams.set('locale', url.locale)
+  url.searchParams.set('locale', url.locale);
 
   // Simulate connection with a redis cache
   const isInMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE;
 
-  if (url.pathname.includes(".")) {
+  if (url.pathname.includes('.')) {
     return undefined;
   }
 
