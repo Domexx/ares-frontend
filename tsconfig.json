@@ -24,6 +24,6 @@
       "@Ares/*": ["src/*"]
     }
   },
-  "include": ["./src", "next-env.d.ts", "index.d.ts", ".eslintrc"],
+  "include": ["./src", "next-env.d.ts", "index.d.ts", ".eslintrc", "middleware/_middleware.ts"],
   "exclude": ["node_modules"]
 }
