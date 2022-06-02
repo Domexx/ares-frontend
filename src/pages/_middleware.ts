@@ -22,9 +22,10 @@ export default function Middleware(req: NextRequest) {
   // If is in maintenance mode, point the url pathname to the maintenance page
   if (isInMaintenanceMode && !unprotectedPaths.includes(xurl)) {
     url.pathname = `/maintenance`;
+    url.searchParams.append('callback', new URL(req.url).pathname);
 
     // Rewrite to the url
-    return NextResponse.rewrite(url);
+    return NextResponse.redirect(url);
   }
 
   return NextResponse.next();
