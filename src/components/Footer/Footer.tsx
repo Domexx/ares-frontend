@@ -19,7 +19,7 @@ export type Copyright = {
 
 export type Props = {
   items: FooterListItem[];
-  description: HTMLAudioElement;
+  description: string;
   discord: string;
   copyright: Copyright;
 };
