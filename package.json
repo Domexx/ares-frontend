@@ -129,11 +129,14 @@
     "dependencies": {
         "@loadable/component": "^5.15.2",
         "jest": "^27.5.1",
-        "next": "^12.1.7-canary.29",
+        "next": "^12.1.6",
         "next-seo": "^5.4.0",
         "react": "18.0.0",
         "react-dom": "18.0.0",
-        "webpack": "^5.72.0"
+        "webpack": "^5.73.0"
+    },
+    "peerDependencies": {
+        "webpack": "*"
     },
     "devDependencies": {
         "@auth0/nextjs-auth0": "^1.7.0",
@@ -200,9 +203,10 @@
         "react-loading-skeleton": "^3.1.0",
         "react-merge-refs": "^1.1.0",
         "react-native-svg": "^12.3.0",
+        "react-router": "^6.3.0",
         "react-tabs": "^5.1.0",
         "react-use-auth": "^2.1.0-14",
-        "storybook-addon-next": "^1.6.2",
+        "storybook-addon-next": "^1.6.6",
         "storybook-addon-performance": "^0.16.1",
         "storybook-addon-pseudo-states": "^1.7.0",
         "storybook-dark-mode": "^1.0.9",
@@ -215,6 +219,7 @@
         "stylelint-suitcss": "^4.0.0",
         "stylelint-value-no-unknown-custom-properties": "^3.0.0",
         "typescript": "^4.5.4",
+        "util": "^0.12.4",
         "webp-loader": "^0.6.0"
     }
 }

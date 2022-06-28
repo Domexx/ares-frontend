@@ -1,0 +1,78 @@
+/* === === === === StaffGrid/ListItem === === === === */
+
+.ListItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  overflow: hidden;
+  max-height: 120px;
+  margin-top: 24px;
+  border-radius: 8px;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: var(--clr-text-primary);
+
+  background-image: linear-gradient(transparent, var(--clr-dark-200) 85%),
+    url('/static/images/StaffGrid/Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--clr-text-tertiary);
+  transition: opacity 0.5s;
+}
+
+.ListItem:hover {
+  opacity: 0.7;
+}
+
+.ListItem-nameWrapper {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 1px 1px 2px var(--clr-dark-300);
+}
+
+.ListItem-name {
+  font-size: 20px;
+  color: var(--clr-text-primary);
+}
+
+.ListItem-motto {
+  color: var(--clr-text-primary);
+}
+
+.ListItem-rank {
+  display: flex;
+  padding: 5px 10px 5px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: var(--clr-text-primary);
+  color: var(--clr-dark-300);
+}
+
+.ListItem-rankWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.ListItem-status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.ListItem-statusBadge-online {
+  background: var(--clr-primary);
+}
+
+.ListItem-statusBadge-offline {
+  background: var(--clr-error);
+}
+
+.ListItem a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}

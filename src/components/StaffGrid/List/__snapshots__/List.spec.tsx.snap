@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component should render properly 1`] = `
+<div
+  class="List"
+>
+  <div
+    class="List-headline"
+  >
+    Administration
+  </div>
+  <div
+    class="List-content"
+  />
+</div>
+`;

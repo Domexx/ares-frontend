@@ -1,0 +1,23 @@
+/* === === === === StaffGrid/List === === === === */
+
+.List {
+  margin-top: 30px;
+}
+
+.List-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.List-headline {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (--tablet-landscape) {
+  .List-content {
+    flex-direction: column;
+  }
+}

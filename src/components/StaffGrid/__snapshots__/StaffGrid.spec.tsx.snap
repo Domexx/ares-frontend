@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Staff Grid Component should render properly 1`] = `
+<section
+  class="StaffGrid u-grid"
+>
+  <div
+    class="StaffGrid-wrapper"
+  />
+</section>
+`;

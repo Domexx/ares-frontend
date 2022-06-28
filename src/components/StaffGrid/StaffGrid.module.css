@@ -1,0 +1,15 @@
+/* === === === === StaffGrid === === === === */
+
+.StaffGrid {
+  margin-top: 0;
+}
+
+.StaffGrid-wrapper {
+  grid-column: 2 / span 12;
+}
+
+@media (--phone) {
+  .StaffGrid-wrapper {
+    grid-column: 2 / span 14;
+  }
+}

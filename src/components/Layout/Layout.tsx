@@ -145,9 +145,9 @@ const Layout: React.FC<PropsWithChildren<Props>> = ({ title, children }) => {
                 children: [],
               },
               {
-                id: 'cosmic_statistics',
-                name: 'Statistics',
-                url: 'statistics',
+                id: 'cosmic_staff',
+                name: 'Staff',
+                url: 'staff',
                 icon: 'statistics',
                 locale: true,
                 children: [],
